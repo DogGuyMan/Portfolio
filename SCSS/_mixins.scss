@@ -1,0 +1,26 @@
+@import "variables";
+
+@mixin mobile {
+    @media (max-width : 800px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width : 801px) {
+        @content;
+    }
+}
+
+@mixin PdingTB($heightNum1, $heightNum2){
+    padding-top: $heightNum1;
+    padding-bottom: $heightNum2;
+}
+@mixin PdingLR($widthNum){
+    padding-left: $widthNum;
+    padding-right: $widthNum;
+}
+
+@mixin BoundHW($W, $H){
+    max-width : $W;
+    max-height : $H;
+}

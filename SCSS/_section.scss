@@ -1,0 +1,162 @@
+@import "variables", "mixins";
+
+.sectionSCSS {
+    width :1fr;
+
+    section {
+        position: relative;
+        //border: 1px solid black;
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        &.title_section {
+            background-color: #AAA;
+            @include PdingTB($section_paddingT, $section_paddingB);
+            @include BoundHW(100%, $section_H);
+
+            .title_content {
+                @extend .idcontent;
+                @include BoundHW(100%, calc($section_H - (2*$content_paddingTB)));
+                height: 400px;
+                @include PdingLR($content_paddingLR);
+                @include PdingTB($content_paddingTB, $content_paddingTB);
+            }
+        }
+
+        &.about_section {
+            background-color: #FF0;
+            @include PdingTB($section_paddingT, $section_paddingB);
+            @include BoundHW(100%, $section_H);
+
+            .about_content {
+                display: flex;
+
+                .img {
+                    width: 150px;
+                    height: 200px;
+                    background-color: #000;
+                }
+
+                @extend .idcontent;
+                @include BoundHW(100%, calc($section_H - (2*$content_paddingTB)));
+                @include PdingLR($content_paddingLR);
+                @include PdingTB($content_paddingTB, $content_paddingTB);
+            }
+        }
+
+        &.tech_section {
+            background-color: #F0F;
+            @include PdingTB($section_paddingT, $section_paddingB);
+
+            .tech_content {
+                @include BoundHW(100%, calc($section_H - (2*$content_paddingTB)));
+                @include PdingLR($content_paddingLR);
+                @include PdingTB($content_paddingTB, $content_paddingTB);
+
+                div {
+                    width: 100%;
+                    height: 300px;
+                    margin-top: 30px;
+                    background-color: #BBB;
+                    border: 1px solid #000;
+                    border-radius: 40px;
+                }
+            }
+        }
+
+        &.project_section {
+            background-color: #0FF;
+            @include PdingTB($section_paddingT, $section_paddingB);
+
+            .project_content {
+                display: flex;
+                flex-direction: column;
+                @include BoundHW(1fr, calc($section_H - (2*$content_paddingTB)));
+                @include PdingLR($content_paddingLR);
+                @include PdingTB($content_paddingTB, $content_paddingTB);
+
+                .description_flex {
+                    display: flex;
+                    width: 100%;
+                    height: 300px;
+
+                    .projecttext {
+                        flex-grow: 1;
+                        background-color: darkorchid;
+                    }
+
+                    .github_state {
+                        flex-grow: 1;
+                        background-color: greenyellow;
+
+                        img {
+                            border: 10px solid #FFF;
+                            background-color: #FFF;
+                            height: 100%;
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .project_grid {
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: repeat(4, 1fr);
+                    margin-top: 50px;
+
+                    .project_box {
+                        @extend .boxform;
+                    }
+                }
+            }
+        }
+
+        &.gallery_section {
+            background-color: #F00;
+            @include PdingTB($section_paddingT, $section_paddingB);
+
+            .gallery_content {
+                display: flex;
+                flex-direction: column;
+                @include BoundHW(100%, $section_H);
+                @include PdingLR($content_paddingLR);
+                @include PdingTB($content_paddingTB, $content_paddingTB);
+
+                .description_flex {
+                    display: flex;
+                    width: 100%;
+                    height: 300px;
+
+                    .projecttext {
+                        flex-grow: 1;
+                        background-color: darkorchid;
+                    }
+                }
+
+                .gallery_list {
+                    .slides {
+                        display: flex;
+                        width: 100%;
+                        .slide {
+                            min-width: 400px;
+                            .slideBound {
+                                p{
+                                    position:absolute;
+                                    inset: 0;
+                                    font-size: 3rem;
+                                }
+                                @extend .boxform;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.contact_me_section {
+            background-color: #00F;
+        }
+    }
+}

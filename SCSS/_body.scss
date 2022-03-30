@@ -1,0 +1,16 @@
+@import "section", "sidebar", "mixins";
+
+$content_fontSize : 1rem;
+
+body {
+    display: flex;
+    /*https://homzzang.com/b/css-115*/
+    overflow-x: hidden;
+    .sidebar {
+        @extend .sidebarSCSS;
+    }
+
+    section.contents {
+        @extend .sectionSCSS;
+    }
+}
