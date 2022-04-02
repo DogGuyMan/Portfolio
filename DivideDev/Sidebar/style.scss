@@ -1,0 +1,237 @@
+//style.css
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
+$bgColor : #292B37;
+$footerBgColor : #3A3C47;
+$sectionName : #068f88;
+$sideBgColor : #1e1f28;
+$noneActiveColor : #4c4c4c;
+$ActiveColor : #FFF;
+$sideBarWidth : 160px;
+$ellipseSize : 962px;
+$ellipsePositionY : -154px;
+$ellipsePositionX : 45.5vw;
+$ActiveTextPositionY : 144px;
+$ActiveTextPositionX : 55vw;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: pretendard;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+li{
+    @extend .alignCenter;
+    list-style: none;
+    width: 100%;
+    height: 48px;
+}
+///////////////////////////////////////////////////////
+
+
+.sectionPadding {
+    padding: 40px 0;
+}
+
+.ellipseSize{
+    width: $ellipseSize;
+    height: $ellipseSize;
+}
+
+.ellipseShape{
+    position: absolute;
+    border-radius: 100%;
+    border: solid 4px #32333f;
+    width: 100%;
+    height: 100%;
+}
+
+.alignCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionDefault{
+    color : $sectionName;
+    margin: 148px 80px 0 80px;
+}
+
+@mixin pngIcon($_size){
+    max-width: $_size;
+    max-height: $_size;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+//////////////////////////////////////////////////////
+
+
+body{
+    background-color: $bgColor;
+}
+
+main.main{
+    display: grid;
+    grid-template-columns : $sideBarWidth 1fr;
+    .SidebarSection{
+        @extend .SidebarStyle;
+    }
+    .ContentSection{
+        position: relative;
+        overflow-x: hidden;
+        section{
+            @extend .sectionDefault;
+            font-size: 40px;
+            min-height: 100vh;
+            border-bottom: 10px solid #FFF;
+        }
+        section.about{
+            .ActiveText{
+            }
+            .geometryDesign{
+                z-index: -1000;
+                position: absolute;
+                top : $ellipsePositionY;
+                left : $ellipsePositionX;
+                .ellipseSet{
+                    position: absolute;
+                    @extend .ellipseSize;
+                    :nth-child(1){
+                        @extend .ellipseShape;
+                    }
+                    :nth-child(2){
+                        @extend .ellipseShape;
+                        left: calc(15px);
+                        top: calc(33px);
+                    }
+                    :nth-child(3){
+                        @extend .ellipseShape;
+                        left: calc(42px);
+                        top: calc(63px);
+                    }
+                }
+            }
+            p.headerText{
+                border: 2px solid #FFF;
+                width: 469px;
+                height: 202px;
+                font-size: 72px;
+                font-weight: bold;
+                line-height: 1.4;
+                color: #FFF;
+                margin-top: 8px;
+            }
+            p.contentText{
+                width: 573px;
+                height: 352px;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 1.6;
+                text-align: left;
+                color: #94959b;
+                strong {
+                    color :#d8d8da;
+                }
+                margin-top: 32px;
+                margin-bottom: 72px;
+            }
+            .stats{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 1.6;
+                color: #d4d5d7;
+                gap : 26px;
+                min-width: 650px;
+                max-width: 1650px;
+                
+                div{
+                    p {margin: 16px 0};
+                    img{
+                        width: 100%;
+                        min-width: 300px;
+                        border-radius: 16px;
+                        height: calc(100vw * (1/8.5));
+                    }
+                    //미디어 쿼리 적용할것
+                }
+            }
+        }
+    }
+}
+
+.SidebarStyle{
+    position: relative;
+    .sidebar_area{
+        width: 100%;
+        height: 100%;
+        background-color: $sideBgColor;
+    }
+    .sidebar_fixed{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        width: $sideBarWidth;
+        height: 100vh;
+        padding: 0 27px;
+        inset: 0;
+        .profile{
+            @extend .alignCenter;
+            flex-direction: column;
+            text-align: center;
+            padding : 40px 0;
+            .nameSet {
+                white-space:nowrap;
+                margin: 8px 0;
+                .name{
+                    font-size: 18px;
+                    color:#FFF;
+                }
+                .en_name{font-size: 14px;
+                    color : #7b7b81;
+                }
+            }
+            .status{
+                @extend .alignCenter;
+                margin: 8px 0;
+                line-height: 1.5;
+                width: 64px;
+                height: 21px;
+                border-radius: 12px;
+                background-color: #4c4c4c;
+                p {
+                    color: #FFF;
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+            }
+        }
+        .empty_area{
+
+        }
+        .menu{
+            color : $noneActiveColor;
+            cursor: pointer;
+            .menu_list > .Active{
+                color : #FFF;
+            }
+        }
+    }
+}

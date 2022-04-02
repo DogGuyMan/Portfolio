@@ -1,0 +1,62 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: pretendard;
+  line-height: 1.5;
+  font-weight: 600; }
+
+.hidden {
+  display: none; }
+
+a {
+  color: #FFF;
+  text-decoration: none; }
+
+.sectionPadding, .footer {
+  padding: 40px 0; }
+
+.alignCenter, .footer, .footer .content > div {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+body {
+  background-color: #292B37; }
+
+.sectionDefault, .contact {
+  color: #068f88;
+  margin: 148px 80px 0 80px; }
+
+.contact {
+  padding-bottom: 32px;
+  font-size: 40px; }
+
+.footer {
+  color: #d8d8da;
+  background-color: #3A3C47;
+  font-size: 20px;
+  height: 292px; }
+  .footer .content > div {
+    gap: 4px;
+    margin: 16px; }
+  .footer .content .icon-link {
+    margin-top: 40px;
+    gap: 8px; }
+    .footer .content .icon-link .github {
+      max-width: 56px;
+      max-height: 56px; }
+      .footer .content .icon-link .github img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain; }
+    .footer .content .icon-link .tistory {
+      max-width: 56px;
+      max-height: 56px; }
+      .footer .content .icon-link .tistory img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain; }
+  .footer .content .copy_right {
+    color: #96989F; }
