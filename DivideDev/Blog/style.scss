@@ -1,0 +1,246 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
+$bgColor : #292B37;
+$footerBgColor : #3A3C47;
+$sectionName : #068f88;
+$pointColor : #068F88;
+$sideBgColor : #1e1f28;
+$noneActiveColor : #4c4c4c;
+$ActiveColor : #FFF;
+$sideBarWidth : 160px;
+$ellipseSize : 962px;
+$ellipsePositionY : -154px;
+$ellipsePositionX : 45.5vw;
+$ActiveTextPositionY : 144px;
+$ActiveTextPositionX : 55vw;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: pretendard;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+li{
+    @extend .alignCenter;
+    list-style: none;
+    width: 100%;
+    height: 48px;
+}
+///////////////////////////////////////////////////////
+
+
+@mixin pngIcon($_size){
+    max-width: $_size;
+    max-height: $_size;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.sectionPadding {
+    padding: 40px 0;
+}
+
+.ellipseSize{
+    width: $ellipseSize;
+    height: $ellipseSize;
+}
+
+.ellipseShape{
+    position: absolute;
+    border-radius: 100%;
+    border: solid 4px #32333f;
+    width: 100%;
+    height: 100%;
+}
+
+.alignCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionDefault{
+    color : $sectionName;
+    margin: 148px 40px 0 40px;
+}
+
+
+.headerTextForm{
+    border: 2px solid #FFF;
+    width: 469px;
+    height: 202px;
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #FFF;
+    margin-top: 8px;
+}
+
+.contentTextForm{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+    text-align: left;
+    color: #94959b;
+    strong {
+        color :#d8d8da;
+    }
+    margin-top: 32px;
+    margin-bottom: 72px;
+}
+
+.projectForm{
+    background-size : cover;
+    border-radius: 16px;
+    transition: transform 0.5s;
+    .content{
+        border-radius: 16px;
+        flex-direction: column;
+        display: flex;
+        color : #FFF;
+        height: 100%;
+        padding: 40px;
+        opacity: 0;
+        backdrop-filter: blur(0px);
+        transition: opacity 0.5s, backdrop-filter 0.5s;
+        .sharpTag{
+            opacity: 0.4;
+            font-size: 14px;
+        }
+        .title{
+            font-size: 28px;
+        }
+        .description{
+            margin: 16px 0;
+            opacity: 0.8;
+            font-size: 18px;
+        }
+        .emptyArea{
+            height: 100%;
+        }
+        a {
+            color : $pointColor;
+            font-size: 20px;
+            cursor: pointer;
+            &::before{content: "💻 ";}
+        }
+    }
+    &:hover {
+        transform: scale(1.025);
+        .content{
+            opacity: 1;
+            background-color: #0009;
+            background-blend-mode: multiply;
+            backdrop-filter: blur(30px)
+        }
+    }
+}
+
+.postFrom{
+    background-color: #3A3C47;
+    width: 582px;
+    height: 238px;
+    padding: 32px;
+    display: flex;
+    gap: 32px;
+    border-radius: 16px;
+    transition: transform 0.5s;
+    img{ 
+        @include pngIcon(174px); 
+        border-radius: 8px;
+    }
+    .content{
+        color : #FFF;
+        flex-direction: column;
+        display: flex;
+        color : #FFF;
+        padding: 8px 0;
+        height: 100%;
+        line-height: 1.6;
+        .title{
+            font-size: 20px;
+            line-height: 1.4;
+        }
+        .description{
+            color: #818289;
+            margin: 8px 0;
+            opacity: 0.8;
+            font-size: 16px;
+        }
+        .emptyArea{
+            height: 100%;
+        }
+        a{
+            cursor: pointer;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    }
+    &:hover {
+        transform: scale(1.025);
+    }
+}
+
+//////////////////////////////////////////////////////////
+
+body{
+    background-color: $bgColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    min-width: 1280px;
+    border: 1px solid #FFF;
+}
+
+//////////////////////////////////////////////////////////
+
+section{
+    &{
+        @extend .sectionDefault;
+        font-size: 40px;
+    }
+
+    &.blog{
+        p.contentText{
+            @extend .contentTextForm;
+            width: 673px;
+        }
+        .blog_grid{
+            display: grid;
+            gap: 30px;
+            grid-template-columns: 1fr 1fr;
+            .post{
+                @extend .postFrom;
+                
+            }
+        }
+    }
+}
+
+
+
+/*
+background-image:
+ image-set(
+  "zebra.avif" type("image/avif"),
+  "zebra.webp" type("image/webp"),
+  "zebra.png" type("image/png")
+ );
+*/

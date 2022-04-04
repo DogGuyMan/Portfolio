@@ -68,6 +68,28 @@ li{
     margin: 148px 80px 0 80px;
 }
 
+.headerTextForm{
+    border: 2px solid #FFF;
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #FFF;
+    margin-top: 8px;
+}
+
+.contentTextForm{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+    text-align: left;
+    color: #94959b;
+    strong {
+        color :#d8d8da;
+    }
+    margin-top: 32px;
+    margin-bottom: 72px;
+}
+
 @mixin pngIcon($_size){
     max-width: $_size;
     max-height: $_size;
@@ -85,13 +107,54 @@ body{
 }
 
 main.main{
-    display: grid;
-    grid-template-columns : $sideBarWidth 1fr;
+    display: flex;
+    flex-direction: column;
+
     .SidebarSection{
         @extend .SidebarStyle;
     }
     .ContentSection{
-        position: relative;
+        @extend .ContentSectionStyle;
+    }
+}
+
+.SidebarStyle{
+    position: relative;
+    .sidebar_area{
+        width: 100%;
+        height: 56px;
+        background-color: $sideBgColor;
+    }
+    .sidebar_fixed{
+        position: fixed;
+        top: 0; left: 0;
+        margin: 0 40px;
+        display: flex;
+
+        .profile{
+            display: flex;
+            align-self: center;
+            margin: 3px;
+            img {
+                @include pngIcon(24px);
+            }
+        }
+        .menu{
+            ul{
+                display: flex;
+                align-items: center;
+                li{
+                    border: 1px solid #FFF;
+                    width: 140px;
+                    height: 56px;
+                }
+            }
+        }
+    }
+}
+
+.ContentSectionStyle{
+    position: relative;
         overflow-x: hidden;
         section{
             @extend .sectionDefault;
@@ -126,28 +189,14 @@ main.main{
                 }
             }
             p.headerText{
-                border: 2px solid #FFF;
                 width: 469px;
                 height: 202px;
-                font-size: 72px;
-                font-weight: bold;
-                line-height: 1.4;
-                color: #FFF;
-                margin-top: 8px;
+                @extend .headerTextForm;
             }
             p.contentText{
                 width: 573px;
                 height: 352px;
-                font-size: 20px;
-                font-weight: 600;
-                line-height: 1.6;
-                text-align: left;
-                color: #94959b;
-                strong {
-                    color :#d8d8da;
-                }
-                margin-top: 32px;
-                margin-bottom: 72px;
+                @extend .contentTextForm;
             }
             .stats{
                 display: flex;
@@ -173,65 +222,4 @@ main.main{
                 }
             }
         }
-    }
-}
-
-.SidebarStyle{
-    position: relative;
-    .sidebar_area{
-        width: 100%;
-        height: 100%;
-        background-color: $sideBgColor;
-    }
-    .sidebar_fixed{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: fixed;
-        width: $sideBarWidth;
-        height: 100vh;
-        padding: 0 27px;
-        inset: 0;
-        .profile{
-            @extend .alignCenter;
-            flex-direction: column;
-            text-align: center;
-            padding : 40px 0;
-            .nameSet {
-                white-space:nowrap;
-                margin: 8px 0;
-                .name{
-                    font-size: 18px;
-                    color:#FFF;
-                }
-                .en_name{font-size: 14px;
-                    color : #7b7b81;
-                }
-            }
-            .status{
-                @extend .alignCenter;
-                margin: 8px 0;
-                line-height: 1.5;
-                width: 64px;
-                height: 21px;
-                border-radius: 12px;
-                background-color: #4c4c4c;
-                p {
-                    color: #FFF;
-                    font-size: 12px;
-                    font-weight: 500;
-                }
-            }
-        }
-        .empty_area{
-
-        }
-        .menu{
-            color : $noneActiveColor;
-            cursor: pointer;
-            .menu_list > .Active{
-                color : #FFF;
-            }
-        }
-    }
 }

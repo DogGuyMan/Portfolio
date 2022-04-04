@@ -22,133 +22,122 @@ li {
 .sectionPadding {
   padding: 40px 0; }
 
-.ellipseSize, main.main .ContentSection section.about .geometryDesign .ellipseSet {
+.ellipseSize, .ContentSectionStyle section.about .geometryDesign .ellipseSet, main.main .ContentSection section.about .geometryDesign .ellipseSet {
   width: 962px;
   height: 962px; }
 
-.ellipseShape, main.main .ContentSection section.about .geometryDesign .ellipseSet :nth-child(1), main.main .ContentSection section.about .geometryDesign .ellipseSet :nth-child(2), main.main .ContentSection section.about .geometryDesign .ellipseSet :nth-child(3) {
+.ellipseShape, .ContentSectionStyle section.about .geometryDesign .ellipseSet :nth-child(1), main.main .ContentSection section.about .geometryDesign .ellipseSet :nth-child(1), .ContentSectionStyle section.about .geometryDesign .ellipseSet :nth-child(2), main.main .ContentSection section.about .geometryDesign .ellipseSet :nth-child(2), .ContentSectionStyle section.about .geometryDesign .ellipseSet :nth-child(3), main.main .ContentSection section.about .geometryDesign .ellipseSet :nth-child(3) {
   position: absolute;
   border-radius: 100%;
   border: solid 4px #32333f;
   width: 100%;
   height: 100%; }
 
-.alignCenter, li, .SidebarStyle .sidebar_fixed .profile, main.main .SidebarSection .sidebar_fixed .profile, .SidebarStyle .sidebar_fixed .profile .status, main.main .SidebarSection .sidebar_fixed .profile .status {
+.alignCenter, li {
   display: flex;
   align-items: center;
   justify-content: center; }
 
-.sectionDefault, main.main .ContentSection section {
+.sectionDefault, .ContentSectionStyle section, main.main .ContentSection section {
   color: #068f88;
   margin: 148px 80px 0 80px; }
+
+.headerTextForm, .ContentSectionStyle section.about p.headerText, main.main .ContentSection section.about p.headerText {
+  border: 2px solid #FFF;
+  width: 469px;
+  height: 202px;
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #FFF;
+  margin-top: 8px; }
+
+.contentTextForm, .ContentSectionStyle section.about p.contentText, main.main .ContentSection section.about p.contentText {
+  width: 573px;
+  height: 352px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: left;
+  color: #94959b;
+  margin-top: 32px;
+  margin-bottom: 72px; }
+  .contentTextForm strong, .ContentSectionStyle section.about p.contentText strong, main.main .ContentSection section.about p.contentText strong {
+    color: #d8d8da; }
 
 body {
   background-color: #292B37; }
 
 main.main {
-  display: grid;
-  grid-template-columns: 160px 1fr; }
-  main.main .ContentSection {
-    position: relative;
-    overflow-x: hidden; }
-    main.main .ContentSection section {
-      font-size: 40px;
-      min-height: 100vh;
-      border-bottom: 10px solid #FFF; }
-    main.main .ContentSection section.about .geometryDesign {
-      z-index: -1000;
-      position: absolute;
-      top: -154px;
-      left: 45.5vw; }
-      main.main .ContentSection section.about .geometryDesign .ellipseSet {
-        position: absolute; }
-        main.main .ContentSection section.about .geometryDesign .ellipseSet :nth-child(2) {
-          left: calc(15px);
-          top: calc(33px); }
-        main.main .ContentSection section.about .geometryDesign .ellipseSet :nth-child(3) {
-          left: calc(42px);
-          top: calc(63px); }
-    main.main .ContentSection section.about p.headerText {
-      border: 2px solid #FFF;
-      width: 469px;
-      height: 202px;
-      font-size: 72px;
-      font-weight: bold;
-      line-height: 1.4;
-      color: #FFF;
-      margin-top: 8px; }
-    main.main .ContentSection section.about p.contentText {
-      width: 573px;
-      height: 352px;
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 1.6;
-      text-align: left;
-      color: #94959b;
-      margin-top: 32px;
-      margin-bottom: 72px; }
-      main.main .ContentSection section.about p.contentText strong {
-        color: #d8d8da; }
-    main.main .ContentSection section.about .stats {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      font-size: 24px;
-      font-weight: 600;
-      line-height: 1.6;
-      color: #d4d5d7;
-      gap: 26px;
-      min-width: 650px;
-      max-width: 1650px; }
-      main.main .ContentSection section.about .stats div p {
-        margin: 16px 0; }
-      main.main .ContentSection section.about .stats div img {
-        width: 100%;
-        min-width: 300px;
-        border-radius: 16px;
-        height: calc(100vw * (1/8.5)); }
+  display: flex;
+  flex-direction: column; }
 
 .SidebarStyle, main.main .SidebarSection {
   position: relative; }
   .SidebarStyle .sidebar_area, main.main .SidebarSection .sidebar_area {
     width: 100%;
-    height: 100%;
+    height: 56px;
     background-color: #1e1f28; }
   .SidebarStyle .sidebar_fixed, main.main .SidebarSection .sidebar_fixed {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     position: fixed;
-    width: 160px;
-    height: 100vh;
-    padding: 0 27px;
-    inset: 0; }
+    top: 0;
+    left: 0;
+    margin: 0 40px;
+    display: flex; }
     .SidebarStyle .sidebar_fixed .profile, main.main .SidebarSection .sidebar_fixed .profile {
-      flex-direction: column;
-      text-align: center;
-      padding: 40px 0; }
-      .SidebarStyle .sidebar_fixed .profile .nameSet, main.main .SidebarSection .sidebar_fixed .profile .nameSet {
-        white-space: nowrap;
-        margin: 8px 0; }
-        .SidebarStyle .sidebar_fixed .profile .nameSet .name, main.main .SidebarSection .sidebar_fixed .profile .nameSet .name {
-          font-size: 18px;
-          color: #FFF; }
-        .SidebarStyle .sidebar_fixed .profile .nameSet .en_name, main.main .SidebarSection .sidebar_fixed .profile .nameSet .en_name {
-          font-size: 14px;
-          color: #7b7b81; }
-      .SidebarStyle .sidebar_fixed .profile .status, main.main .SidebarSection .sidebar_fixed .profile .status {
-        margin: 8px 0;
-        line-height: 1.5;
-        width: 64px;
-        height: 21px;
-        border-radius: 12px;
-        background-color: #4c4c4c; }
-        .SidebarStyle .sidebar_fixed .profile .status p, main.main .SidebarSection .sidebar_fixed .profile .status p {
-          color: #FFF;
-          font-size: 12px;
-          font-weight: 500; }
-    .SidebarStyle .sidebar_fixed .menu, main.main .SidebarSection .sidebar_fixed .menu {
-      color: #4c4c4c;
-      cursor: pointer; }
-      .SidebarStyle .sidebar_fixed .menu .menu_list > .Active, main.main .SidebarSection .sidebar_fixed .menu .menu_list > .Active {
-        color: #FFF; }
+      display: flex;
+      align-self: center;
+      margin: 3px; }
+      .SidebarStyle .sidebar_fixed .profile img, main.main .SidebarSection .sidebar_fixed .profile img {
+        max-width: 24px;
+        max-height: 24px; }
+        .SidebarStyle .sidebar_fixed .profile img img, main.main .SidebarSection .sidebar_fixed .profile img img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain; }
+    .SidebarStyle .sidebar_fixed .menu ul, main.main .SidebarSection .sidebar_fixed .menu ul {
+      display: flex;
+      align-items: center; }
+      .SidebarStyle .sidebar_fixed .menu ul li, main.main .SidebarSection .sidebar_fixed .menu ul li {
+        border: 1px solid #FFF;
+        width: 140px;
+        height: 56px; }
+
+.ContentSectionStyle, main.main .ContentSection {
+  position: relative;
+  overflow-x: hidden; }
+  .ContentSectionStyle section, main.main .ContentSection section {
+    font-size: 40px;
+    min-height: 100vh;
+    border-bottom: 10px solid #FFF; }
+  .ContentSectionStyle section.about .geometryDesign, main.main .ContentSection section.about .geometryDesign {
+    z-index: -1000;
+    position: absolute;
+    top: -154px;
+    left: 45.5vw; }
+    .ContentSectionStyle section.about .geometryDesign .ellipseSet, main.main .ContentSection section.about .geometryDesign .ellipseSet {
+      position: absolute; }
+      .ContentSectionStyle section.about .geometryDesign .ellipseSet :nth-child(2), main.main .ContentSection section.about .geometryDesign .ellipseSet :nth-child(2) {
+        left: calc(15px);
+        top: calc(33px); }
+      .ContentSectionStyle section.about .geometryDesign .ellipseSet :nth-child(3), main.main .ContentSection section.about .geometryDesign .ellipseSet :nth-child(3) {
+        left: calc(42px);
+        top: calc(63px); }
+  .ContentSectionStyle section.about .stats, main.main .ContentSection section.about .stats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #d4d5d7;
+    gap: 26px;
+    min-width: 650px;
+    max-width: 1650px; }
+    .ContentSectionStyle section.about .stats div p, main.main .ContentSection section.about .stats div p {
+      margin: 16px 0; }
+    .ContentSectionStyle section.about .stats div img, main.main .ContentSection section.about .stats div img {
+      width: 100%;
+      min-width: 300px;
+      border-radius: 16px;
+      height: calc(100vw * (1/8.5)); }
