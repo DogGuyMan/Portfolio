@@ -8,6 +8,7 @@ function main(){
     sideBarInstance.MenuActive(sectionClass.GetCurIndex());
     window.addEventListener('scroll', ()=>{
         sideBarInstance.MenuActive(sectionClass.GetCurIndex());
+        console.log(sectionClass.GetCurIndex());
     })
 }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,34 +20,37 @@
     <script src="https://kit.fontawesome.com/2b566f59f8.js" crossorigin="anonymous"></script>
     <title>Sidebar</title>
 </head>
+
 <body>
     <main class="main">
         <section class="SidebarSection">
             <section class="sidebar_area"></section>
             <section class="sidebar_fixed">
-                <div class="profile">
-                    <img class="profileImg" src="../../img/icons/profile_image_24.png" alt="">
+                <div class="sideContent">
+                    <div class="profile">
+                        <img class="profileImg" src="../../img/icons/profile_image_24.png" alt="">
 
-                    <div class="nameSet">
-                        <p class="name">홍상준</p>
+                        <div class="nameSet">
+                            <p class="name">홍상준</p>
+                        </div>
+
                     </div>
-                    
-                </div>
-                <div class="empty_area"></div>
-                <div class="menu">
-                    <ul class="menu_list">
-                        <li id="about">About</li>
-                        <li id="skill">Skill Set</li>
-                        <li id="project">Project</li>
-                        <li id="artworks">Artworks</li>
-                        <li id="blog">Blog</li>
-                        <li id="contact">Contact</li>
-                    </ul>
+                    <div class="empty_area"></div>
+                    <div class="menu">
+                        <ul class="menu_list">
+                            <li id="about">About</li>
+                            <li id="skill">Skill Set</li>
+                            <li id="project">Project</li>
+                            <li id="artworks">Artworks</li>
+                            <li id="blog">Blog</li>
+                            <li id="contact">Contact</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </section>
         <section class="ContentSection">
-            <section class="about hidden">
+            <section class="about">
                 <h1>About</h1>
                 <!--
                 <div class="ActiveText">
@@ -60,34 +64,30 @@
                         <div></div>
                     </div>
                 </div>
+                                -->
                 <p class="headerText">
                     예술적인 개발자 홍상준 입니다.
                 </p>
-                -->
                 <p class="contentText">
                     <span>
                         <strong>
                             보충역 산업기능요원을 지원하게 되었습니다.
-                            숭실대학교 컴퓨터학부</strong>에서 <strong>프론트엔드</strong> 및 <strong>게임 개발</strong>을 주로 공부중입니다. 
-                        다양한 문제를 해결할 때 느끼는 즐거움은 저의 원동력입니다. 
+                            숭실대학교 컴퓨터학부</strong>에서 <strong>프론트엔드</strong> 및 <strong>게임 개발</strong>을 주로 공부중입니다.
+                        다양한 문제를 해결할 때 느끼는 즐거움은 저의 원동력입니다.
                         꾸준하게 깊이있는 학습을 통해 기술력을 다지고, 이를 통해 문제를 해결해 나가고자 합니다.
                         <br>
                     </span>
                     <br>
                     <span>
-                        저는 평소 C/C++/Python으로 백준을 풀면서 <strong>알고리즘 공부</strong>를 했습니다. 
-                        Riot API를 이용해 유저의 게임데이터를 가져오고 R studio을 이용해 
-                        유저의 플레이 동향에 대한 <strong>통계적 가설을 세우고 분석</strong>하는 프로젝트를 진행했습니다. 
-                        안면인식, 시선 추적 오픈소스를 이용한 웹기반 <strong>온라인 테스트 부정행위 모니터링</strong> 프로그램을 만들었고, 
-                        이 프로젝트는 KCI 논문으로 등재되었습니다. 
+                        저는 평소 C/C++/Python으로 백준을 풀면서 <strong>알고리즘 공부</strong>를 했습니다.
+                        Riot API를 이용해 유저의 게임데이터를 가져오고 R studio을 이용해
+                        유저의 플레이 동향에 대한 <strong>통계적 가설을 세우고 분석</strong>하는 프로젝트를 진행했습니다.
+                        안면인식, 시선 추적 오픈소스를 이용한 웹기반 <strong>온라인 테스트 부정행위 모니터링</strong> 프로그램을 만들었고,
+                        이 프로젝트는 KCI 논문으로 등재되었습니다.
                         GIGDC 공모전에 제출할 게임을 <strong>Unity</strong>로 개발중입니다.
                     </span>
                 </p>
                 <div class="stats">
-                    <div class="solvedAC End">
-                        <p>Solved AC</p>
-                        <a href="https://solved.ac/felipuss"><img src="http://mazassumnida.wtf/api/generate_badge?boj=felipuss"alt="Solved.ac&#xD504;&#xB85C;&#xD544;"></a>
-                    </div>
                     <div class="githubStats">
                         <p>Github stats</p>
                         <img src="https://github-readme-stats.vercel.app/api?username=DogGuyMan&amp;show_icons=true"
@@ -96,7 +96,13 @@
                     <div class="MULanguages End">
                         <p>Most Used Languages</p>
                         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DogGuyMan&amp;hide=ShaderLab,Html ,HLSL&amp;layout=compact&langs_count=10"
-                        alt="Top Langs">
+                            alt="Top Langs">
+                    </div>
+                    <div class="solvedAC End">
+                        <p>Solved AC</p>
+                        <a href="https://solved.ac/felipuss"><img
+                                src="http://mazassumnida.wtf/api/generate_badge?boj=felipuss"
+                                alt="Solved.ac&#xD504;&#xB85C;&#xD544;"></a>
                     </div>
                 </div>
             </section>
@@ -116,7 +122,35 @@
                 <h1>Contact</h1>
             </section>
         </section>
+        <section class="footer hidden">
+            <div class="content">
+                <div class="phone_number">
+                    <img src="../../img/icons/phone_icon.svg"></img>
+                    <span class="number">010-6499-2609</span>
+                </div>
+                <div class="Email">
+                    <img src="../../img/icons/email_icon.svg"></img>
+                    <span class="Email">escatrgot@gmail.com</span>
+                </div>
+                <div class="icon-link">
+                    <div class="github">
+                        <a href="https://github.com/DogGuyMan" target="_blank">
+                            <img src="../../img/icons/github_icon.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="tistory">
+                        <a href="https://felipuss.tistory.com/" target="_blank">
+                            <img src="../../img/icons/tistory_icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="copy_right">
+                    <span>© 2022. Hong, SangJoon. All rights reserved.</span>
+                </div>
+            </div>
+        </section>
     </main>
     <script defer src="../../public/bundle.js"></script>
 </body>
+
 </html>

@@ -43,9 +43,6 @@ li {
   margin: 148px 80px 0 80px; }
 
 .headerTextForm, .ContentSectionStyle section.about p.headerText, main.main .ContentSection section.about p.headerText {
-  border: 2px solid #FFF;
-  width: 469px;
-  height: 202px;
   font-size: 72px;
   font-weight: bold;
   line-height: 1.4;
@@ -53,8 +50,6 @@ li {
   margin-top: 8px; }
 
 .contentTextForm, .ContentSectionStyle section.about p.contentText, main.main .ContentSection section.about p.contentText {
-  width: 573px;
-  height: 352px;
   font-size: 20px;
   font-weight: 600;
   line-height: 1.6;
@@ -70,38 +65,60 @@ body {
 
 main.main {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
+  main.main .ContentSection {
+    max-width: 1280px; }
 
 .SidebarStyle, main.main .SidebarSection {
-  position: relative; }
+  position: relative;
+  width: 100vw;
+  height: 56px; }
   .SidebarStyle .sidebar_area, main.main .SidebarSection .sidebar_area {
-    width: 100%;
-    height: 56px;
     background-color: #1e1f28; }
   .SidebarStyle .sidebar_fixed, main.main .SidebarSection .sidebar_fixed {
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    margin: 0 40px;
-    display: flex; }
-    .SidebarStyle .sidebar_fixed .profile, main.main .SidebarSection .sidebar_fixed .profile {
-      display: flex;
-      align-self: center;
-      margin: 3px; }
-      .SidebarStyle .sidebar_fixed .profile img, main.main .SidebarSection .sidebar_fixed .profile img {
-        max-width: 24px;
-        max-height: 24px; }
-        .SidebarStyle .sidebar_fixed .profile img img, main.main .SidebarSection .sidebar_fixed .profile img img {
-          height: 100%;
-          width: 100%;
-          object-fit: contain; }
-    .SidebarStyle .sidebar_fixed .menu ul, main.main .SidebarSection .sidebar_fixed .menu ul {
-      display: flex;
-      align-items: center; }
-      .SidebarStyle .sidebar_fixed .menu ul li, main.main .SidebarSection .sidebar_fixed .menu ul li {
-        border: 1px solid #FFF;
-        width: 140px;
-        height: 56px; }
+    background-color: #1e1f28;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; }
+    .SidebarStyle .sidebar_fixed .sideContent, main.main .SidebarSection .sidebar_fixed .sideContent {
+      min-width: 1280px;
+      padding: 0 80px;
+      display: flex; }
+      .SidebarStyle .sidebar_fixed .sideContent .profile, main.main .SidebarSection .sidebar_fixed .sideContent .profile {
+        display: flex;
+        align-items: center;
+        height: inherit;
+        margin: 3px; }
+        .SidebarStyle .sidebar_fixed .sideContent .profile img, main.main .SidebarSection .sidebar_fixed .sideContent .profile img {
+          max-width: 24px;
+          max-height: 24px; }
+          .SidebarStyle .sidebar_fixed .sideContent .profile img img, main.main .SidebarSection .sidebar_fixed .sideContent .profile img img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain; }
+        .SidebarStyle .sidebar_fixed .sideContent .profile .nameSet, main.main .SidebarSection .sidebar_fixed .sideContent .profile .nameSet {
+          line-height: 1.5;
+          color: #d8d8da;
+          padding: 0 6px; }
+      .SidebarStyle .sidebar_fixed .sideContent .empty_area, main.main .SidebarSection .sidebar_fixed .sideContent .empty_area {
+        width: 105px; }
+      .SidebarStyle .sidebar_fixed .sideContent .menu ul, main.main .SidebarSection .sidebar_fixed .sideContent .menu ul {
+        display: flex;
+        align-items: center; }
+        .SidebarStyle .sidebar_fixed .sideContent .menu ul li, main.main .SidebarSection .sidebar_fixed .sideContent .menu ul li {
+          width: 140px;
+          height: 56px;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 1.5;
+          color: #4c4c4c; }
+          .SidebarStyle .sidebar_fixed .sideContent .menu ul li.Active, main.main .SidebarSection .sidebar_fixed .sideContent .menu ul li.Active {
+            color: #068f88; }
 
 .ContentSectionStyle, main.main .ContentSection {
   position: relative;
@@ -123,6 +140,12 @@ main.main {
       .ContentSectionStyle section.about .geometryDesign .ellipseSet :nth-child(3), main.main .ContentSection section.about .geometryDesign .ellipseSet :nth-child(3) {
         left: calc(42px);
         top: calc(63px); }
+  .ContentSectionStyle section.about p.headerText, main.main .ContentSection section.about p.headerText {
+    width: 469px;
+    height: 202px; }
+  .ContentSectionStyle section.about p.contentText, main.main .ContentSection section.about p.contentText {
+    width: 573px;
+    height: 352px; }
   .ContentSectionStyle section.about .stats, main.main .ContentSection section.about .stats {
     display: flex;
     justify-content: space-between;
@@ -140,4 +163,4 @@ main.main {
       width: 100%;
       min-width: 300px;
       border-radius: 16px;
-      height: calc(100vw * (1/8.5)); }
+      height: 249px; }
