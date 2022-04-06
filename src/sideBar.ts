@@ -69,6 +69,4 @@ class Sidebar {
 
 const sideBarInstance: Sidebar = new Sidebar();
 
-export {
-    sideBarInstance
-};
+module.exports = sideBarInstance;

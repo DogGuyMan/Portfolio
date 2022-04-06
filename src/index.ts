@@ -1,19 +1,19 @@
 //import {_var_} from './___.ts'
-import {sectionClass} from './section'
-import {sideBarInstance} from './sideBar'
+const _sectionClass = require('./section');
+const _sideBarInstance = require('./sideBar');
 
 console.log("bundle complete");
 
 function sideBarInit(){
-    sideBarInstance.ScrollMenuActive(sectionClass.GetCurIndex());
-    sideBarInstance.MouseMenuActive(sectionClass.mSectionSetElements);
-    sideBarInstance.HandleResize();
+    _sideBarInstance.ScrollMenuActive(_sectionClass.GetCurIndex());
+    _sideBarInstance.MouseMenuActive(_sectionClass.mSectionSetElements);
+    _sideBarInstance.HandleResize();
 }
 
 function main(){
     sideBarInit();
     window.addEventListener('scroll', ()=>{
-        sideBarInstance.ScrollMenuActive(sectionClass.GetCurIndex());
+        _sideBarInstance.ScrollMenuActive(_sectionClass.GetCurIndex());
     })
 
 }

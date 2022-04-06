@@ -84,4 +84,4 @@ class Section {
 
 const sectionClass : Section = new Section();
 
-export {sectionClass};
+module.exports = sectionClass;
