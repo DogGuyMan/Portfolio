@@ -1,5 +1,5 @@
 "use strict";
-import anime from '../node_modules/animejs/lib/anime.es.js';
+import anime from 'animejs/lib/anime.es.js';
 
 
 let svgTextAnimation = anime({
