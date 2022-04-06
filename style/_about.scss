@@ -10,13 +10,11 @@
 .aboutForm{
     p.headerText {
         width: 469px;
-        height: 202px;
         @extend .headerTextForm;
     }
 
     p.contentText {
         width: 573px;
-        height: 352px;
         @extend .contentTextForm;
     }
 
