@@ -92,6 +92,77 @@ li {
     margin-bottom: 72px;
 }
 
+.reveal{
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.animationForm{
+    .activeText{
+        position: absolute;
+        z-index: -800;
+        svg{
+            position: absolute;
+            transform: scale(100%);
+            &:nth-child(1){
+                top : 150px;
+                left: 80px;
+            }
+            &:nth-child(2){
+                top : 300px;
+                left: 185px;
+            }
+        }
+        svg:first-child >  path{
+            transform: 
+                rotate(-16.52deg)
+                translate(-30px,0);
+        }
+        svg:last-child >  path{
+            transform: 
+                rotate(-16.52deg)
+                translate(0px,10px);
+        }
+    }
+    
+    .EllipseList{
+        position: absolute;
+        z-index: -999;
+        top: 100px; left: 100px;
+        svg{
+            width: 800px;
+            height: 800px;
+            position: absolute;
+            &:nth-child(4){}
+            &:nth-child(3){
+                left : 7; top: -20px;
+            }
+            &:nth-child(2){
+                
+                left : 14; top: -40px;
+            }
+            &:nth-child(1){
+                left : 21; top: -60px;
+            }
+        }
+        svg > path {
+            transform: 
+                rotate(10.45deg)
+                scale(80%)
+                translate(100px, -30px);
+        }
+        svg:nth-child(1) > path{opacity: 1;}
+        svg:nth-child(2) > path{opacity: 0.8;}
+        svg:nth-child(3) > path{opacity: 0.6;}
+        svg:nth-child(4) > path{opacity: 0.4;}
+    }
+}
+
 @mixin pngIcon($_size) {
     max-width: $_size;
     max-height: $_size;
@@ -103,12 +174,26 @@ li {
     }
 }
 
+html::-webkit-scrollbar{
+    width: 16px;
+}
+html::-webkit-scrollbar-track{
+    background-color: #2f3542;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #94959b;
+    border-radius: 10px;
+}
+
 //////////////////////////////////////////////////////
-
-
 body {
     background-color: $bgColor;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+
 
 main.main {
     display: flex;
@@ -124,6 +209,13 @@ main.main {
 
         @extend .ContentSectionStyle;
     }
+}
+
+.AboutAnime{
+    position: absolute;
+    top: 0;
+    right: 52.5%; 
+    @extend .animationForm;
 }
 
 .SidebarStyle {
@@ -170,11 +262,20 @@ main.main {
             }
 
             .menu {
+                div.ActivedBox{
+                    position: fixed;
+                    width: 140px;
+                    height: 56px;
+                    z-index: -2;
+                    background-color: #3A3C47;
+                    border-bottom : 3px solid $sectionName;
+                }
                 ul {
                     display: flex;
                     align-items: center;
 
                     li {
+                        cursor: pointer;
                         width: 140px;
                         height: 56px;
 
@@ -184,6 +285,11 @@ main.main {
                         color: #4c4c4c;
                         &.Active{
                             color : $sectionName;
+                            transition: color 0.5s ease;
+                        }
+                        &:hover{
+                            
+                            border-bottom: 1px solid #4c4c4c;
                         }
                     }
                 }
@@ -204,36 +310,6 @@ main.main {
     }
 
     section.about {
-        .ActiveText {}
-
-        .geometryDesign {
-            z-index: -1000;
-            position: absolute;
-            top: $ellipsePositionY;
-            left: $ellipsePositionX;
-
-            .ellipseSet {
-                position: absolute;
-                @extend .ellipseSize;
-
-                :nth-child(1) {
-                    @extend .ellipseShape;
-                }
-
-                :nth-child(2) {
-                    @extend .ellipseShape;
-                    left: calc(15px);
-                    top: calc(33px);
-                }
-
-                :nth-child(3) {
-                    @extend .ellipseShape;
-                    left: calc(42px);
-                    top: calc(63px);
-                }
-            }
-        }
-
         p.headerText {
             width: 469px;
             height: 202px;

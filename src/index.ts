@@ -4,12 +4,19 @@ import {sideBarInstance} from './sideBar'
 
 console.log("bundle complete");
 
+function sideBarInit(){
+    sideBarInstance.ScrollMenuActive(sectionClass.GetCurIndex());
+    sideBarInstance.MouseMenuActive(sectionClass.mSectionSetElements);
+    sideBarInstance.HandleResize();
+}
+
 function main(){
-    sideBarInstance.MenuActive(sectionClass.GetCurIndex());
+    sideBarInit();
     window.addEventListener('scroll', ()=>{
-        sideBarInstance.MenuActive(sectionClass.GetCurIndex());
+        sideBarInstance.ScrollMenuActive(sectionClass.GetCurIndex());
         console.log(sectionClass.GetCurIndex());
     })
+
 }
 
 main();

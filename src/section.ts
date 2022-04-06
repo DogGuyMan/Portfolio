@@ -8,10 +8,10 @@ class Section {
             mTempIndex : 현재 위치한 섹션 인덱스
             mOffset : 스크롤 내렸을때 인식 범위
     */
-    private mSectionSet : HTMLElement;
-    private mSectionSetElements : NodeListOf<HTMLElement>;
-    private mTempIndex : number;
-    private mOffset : number;
+    public mSectionSet : HTMLElement;
+    public mSectionSetElements : NodeListOf<HTMLElement>;
+    public mTempIndex : number;
+    public mOffset : number;
     /*
         생성자
             멤버 변수 초기화
