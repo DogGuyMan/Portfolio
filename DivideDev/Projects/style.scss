@@ -44,19 +44,6 @@ li{
     padding: 40px 0;
 }
 
-.ellipseSize{
-    width: $ellipseSize;
-    height: $ellipseSize;
-}
-
-.ellipseShape{
-    position: absolute;
-    border-radius: 100%;
-    border: solid 4px #32333f;
-    width: 100%;
-    height: 100%;
-}
-
 .alignCenter {
     display: flex;
     align-items: center;
@@ -70,7 +57,6 @@ li{
 
 
 .headerTextForm{
-    border: 2px solid #FFF;
     width: 469px;
     height: 202px;
     font-size: 72px;

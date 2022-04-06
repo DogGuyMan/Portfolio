@@ -1,0 +1,58 @@
+@import "variables";
+
+.artworksForm {
+    position: relative;
+
+    .swiper {
+        margin: 56px 0;
+        height: 672px;
+
+        .swiper-wrapper {
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include pngIcon(600px);
+
+                img {
+                    cursor: pointer;
+                    border-radius: 16px;
+                }
+            }
+        }
+
+        .swiper-pagination {
+            font-size: 28px;
+            line-height: 1.6;
+            color: #d8d8da;
+        }
+
+        .swiper-button-prev {
+            background-image: url('https://drive.google.com/uc?export=download&id=1b-S6NjwIloCozUPnNuK3sfVmR6B5PR71');
+            width: 48px;
+            height: 48px;
+            border-radius: 100%;
+            cursor: pointer;
+
+            &::after {
+                display: none;
+            }
+
+            transform: translate(450px, 301.5px);
+        }
+
+        .swiper-button-next {
+            background-image: url('https://drive.google.com/uc?export=download&id=1QqhDFcFCA8EirDj2MEIWVOt9XZMeBhOi');
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+            border-radius: 100%;
+
+            &::after {
+                display: none;
+            }
+
+            transform: translate(-450px, 301.5px);
+        }
+    }
+}

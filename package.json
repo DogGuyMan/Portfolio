@@ -3,7 +3,6 @@
   "version": "2.0.0",
   "description": "병특취업을 위한 웹 포트폴리오",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,6 +24,7 @@
     "@babel/preset-react": "^7.16.7",
     "babel-loader": "^8.2.4",
     "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.6.0",
     "nodemailer": "^6.7.3",
     "sass": "^1.49.9",

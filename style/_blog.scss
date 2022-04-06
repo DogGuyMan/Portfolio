@@ -1,0 +1,63 @@
+@import "variables";
+
+
+.postFrom{
+    background-color: #3A3C47;
+    width: 582px;
+    height: 238px;
+    padding: 32px;
+    display: flex;
+    gap: 32px;
+    border-radius: 16px;
+    transition: transform 0.5s;
+    img{ 
+        @include pngIcon(174px); 
+        border-radius: 8px;
+    }
+    .content{
+        color : #FFF;
+        flex-direction: column;
+        display: flex;
+        color : #FFF;
+        padding: 8px 0;
+        height: 100%;
+        line-height: 1.6;
+        .title{
+            font-size: 20px;
+            line-height: 1.4;
+        }
+        .description{
+            color: #818289;
+            margin: 8px 0;
+            opacity: 0.8;
+            font-size: 16px;
+        }
+        .emptyArea{
+            height: 100%;
+        }
+        a{
+            cursor: pointer;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    }
+    &:hover {
+        transform: scale(1.025);
+    }
+}
+
+.blogForm{
+    p.contentText{
+        @extend .contentTextForm;
+        width: 673px;
+    }
+    .blog_grid{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+        .post{
+            @extend .postFrom;
+            
+        }
+    }
+}

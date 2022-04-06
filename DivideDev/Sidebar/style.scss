@@ -308,46 +308,50 @@ main.main {
         min-height: 100vh;
         border-bottom: 10px solid #FFF;
     }
+}
 
-    section.about {
-        p.headerText {
-            width: 469px;
-            height: 202px;
-            @extend .headerTextForm;
-        }
+section.about {
+    @extend .aboutForm;
+}
 
-        p.contentText {
-            width: 573px;
-            height: 352px;
-            @extend .contentTextForm;
-        }
+.aboutForm{
+    p.headerText {
+        width: 469px;
+        height: 202px;
+        @extend .headerTextForm;
+    }
 
-        .stats {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            font-size: 24px;
-            font-weight: 600;
-            line-height: 1.6;
-            color: #d4d5d7;
-            gap: 26px;
-            min-width: 650px;
-            max-width: 1650px;
+    p.contentText {
+        width: 573px;
+        height: 352px;
+        @extend .contentTextForm;
+    }
 
-            div {
-                p {
-                    margin: 16px 0;
-                }
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.6;
+        color: #d4d5d7;
+        gap: 26px;
+        min-width: 650px;
+        max-width: 1650px;
 
-                img {
-                    width: 100%;
-                    min-width: 300px;
-                    border-radius: 16px;
-                    height: 249px;
-                }
-
-                //미디어 쿼리 적용할것
+        div {
+            p {
+                margin: 16px 0;
             }
+
+            img {
+                width: 100%;
+                min-width: 300px;
+                border-radius: 16px;
+                height: 249px;
+            }
+
+            //미디어 쿼리 적용할것
         }
     }
 }

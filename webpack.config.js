@@ -15,9 +15,16 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+                use: [MiniCssExtractPlugin.loader,'css-loader', 'sass-loader'],
                 include: [path.resolve(__dirname, 'style')]
-            }
+            },
+            {
+                test: /\.(png|jpg|gif)$/i,
+                loader: 'file-loader',
+                options:{
+                    name : 'public[contenthash].[ext]',
+                }
+            },
         ]
     },
     resolve: {

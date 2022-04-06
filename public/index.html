@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style type="text/css">
         *,
         *::after,
@@ -15,6 +15,7 @@
             cursor: default;
         }
     </style>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/2b566f59f8.js" crossorigin="anonymous"></script>
@@ -77,7 +78,7 @@
             <section class="sidebar_fixed">
                 <div class="sideContent">
                     <div class="profile">
-                        <img class="profileImg" src="../../img/icons/profile_image_24.png" alt="">
+                        <img class="profileImg" src="../img/icons/profile_image_24.png" alt="">
 
                         <div class="nameSet">
                             <p class="name">홍상준</p>
@@ -112,7 +113,9 @@
                             보충역 산업기능요원을 지원하게 되었습니다.
                             숭실대학교 컴퓨터학부</strong>에서 <strong>프론트엔드</strong> 및 <strong>게임 개발</strong>을 주로 공부중입니다.
                         다양한 문제를 해결할 때 느끼는 즐거움은 저의 원동력입니다.
-                        꾸준하게 깊이있는 학습을 통해 기술력을 다지고, 이를 통해 문제를 해결해 나가고자 합니다.
+                        <span style="color : #FF0">
+                        (꾸준하고 깊이있는 학습을 통해 기술력을 다지고, 이를 통해 문제를 해결해 나가고자 합니다.
+                        OO 하는 팀과 함께하고 싶습니다.)(???)</span>
                         <br>
                     </span>
                     <br>
@@ -146,39 +149,608 @@
             </section>
             <section class="skill">
                 <h1>Skill</h1>
+                <div class="skill_content">
+                    <div id="Tech">
+                        <p>1. Tech Tools</p>
+                        <div class="Algorithm" id="listBox">
+                            <p>알고리즘 문제해결</p>
+                            <div class="ToolList">
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=c.png" alt="">
+                                    </div>
+                                    <p>C</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/cpp.png" alt="">
+                                    </div>
+                                    <p>C++</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=python.png" alt="">
+                                    </div>
+                                    <p>Python</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/java.png" alt="">
+                                    </div>
+                                    <p>Java</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Gamedev" id="listBox">
+                            <p>게임 제작</p>
+                            <div class="ToolList">
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/unity.png" alt="">
+                                    </div>
+                                    <p>Unity</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=c_sharp.png" alt="">
+                                    </div>
+                                    <p>C#</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="DataScience" id="listBox">
+                            <p>데이터 분석</p>
+                            <div class="ToolList">
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=r.png" alt="">
+                                    </div>
+                                    <p>Rstudio</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=pandas.png" alt="">
+                                    </div>
+                                    <p>Pandas</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=beautifulsoup.png" alt="">
+                                    </div>
+                                    <p>Beautifulsoup</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=selsnium.png" alt="">
+                                    </div>
+                                    <p>Selsnium</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Webdev" id="listBox">
+                            <p>웹 개발</p>
+                            <div class="ToolList">
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=html.png" alt="">
+                                    </div>
+                                    <p>HTML</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=css.png" alt="">
+                                    </div>
+                                    <p>CSS</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=js.png" alt="">
+                                    </div>
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=type_script.png" alt="">
+                                    </div>
+                                    <p>Typescript</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=sass.png" alt="">
+                                    </div>
+                                    <p>SCSS</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=Node_js.png" alt="">
+                                    </div>
+                                    <p>Node.js</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=j_query.png" alt="">
+                                    </div>
+                                    <p>Jquary</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Collaboration">
+                        <p>2. Collaboration Tools</p>
+                        <div class="Gamedev" id="listBox">
+                            <div class="ToolList">
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/github.png" alt="">
+                                    </div>
+                                    <p>Github</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=sourcetree.png" alt="">
+                                    </div>
+                                    <p>Sourcetree</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=slack.png" alt="">
+                                    </div>
+                                    <p>Slack</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/zeplin.png" alt="">
+                                    </div>
+                                    <p>Zeplin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Design">
+                        <p>3. Design Tools</p>
+                        <div class="Gamedev" id="listBox">
+                            <div class="ToolList">
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=clipstudio.png" alt="">
+                                    </div>
+                                    <p>Github</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/photoshop.png" alt="">
+                                    </div>
+                                    <p>Sourcetree</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=procreate.png" alt="">
+                                    </div>
+                                    <p>Slack</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=figma.png" alt="">
+                                    </div>
+                                    <p>Zeplin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
             </section>
             <section class="project">
                 <h1>Project</h1>
-            </section>
-            <section class="blog">
-                <h1>Blog</h1>
+                <p class="contentText">
+                    <span>
+                        깃허브 Repository를 만들면서, <strong>개인 프로젝트</strong> 뿐만 아니라, <strong>협업 프로젝트</strong>
+                        그리고 <strong>개발 공부</strong>를 하면서 배웠던 자료구조와 자료구조를 구현한 코드, 알고리즘 노트를 마크다운으로 작성하였습니다.
+                    <strong>노트는 보는 사람도, 추후에 읽을 자신을 생각<strong>하면서 작성했습니다.
+                    </span>
+                </p>
+                <div class="projects_grid">
+                    <div class="project">
+                        <div class="content">
+                            <p class="sharpTag">
+                                <span>#Unity</span>
+                                <span>#C#</span>
+                            </p>
+                            <p class="title">Gear-Heart</p>
+                            <p class="description">
+                                지인을 모아 GIGDC 인디게임 공모전에 제출할 게임을 개발하고 있습니다.  모노톤 그래픽과 디스토피아 테마를 가진  2D 플랫포머 / Run and Action 장르의 슈팅게임입니다 
+                            </p>
+                            <p class="emptyArea"></p>
+                            <a href="https://github.com/DogGuyMan/Owner_neoskyclad_Gear_Heart_Assets" target="_blank">
+                                프로젝트 보러 가기 >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="content">
+                            <p class="sharpTag">
+                                <span>#Nodejs</span>
+                                <span>#webgazer.js</span>
+                            </p>
+                            <p class="title">안면인식을 통한 부정행위 감지</p>
+                            <p class="description">
+                                안면인식, 시선 추적 오픈소스를 이용한 웹기반 온라인 테스트 부정행위 감시 프로그램을 만들었습니다. 해당 프로젝트 설계과정과 연구 내용은 KCI 논문으로 등재되었습니다.
+                            </p>
+                            <p class="emptyArea"></p>
+                            <a href="https://github.com/realsuperman/openSource" target="_blank">
+                                프로젝트 보러 가기 >
+                            </a>
+                            <a href="https://drive.google.com/file/d/1WxpPT7HpGO5iNfCyXGGiHf2Ns0pnESnp/view?usp=sharing" target="_blank">
+                                첨부 논문 >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="content">
+                            <p class="sharpTag">
+                                <span>#Nodejs</span>
+                                <span>#Typescript</span>
+                                <span>#Javascript</span>
+                                <span>#Webpack</span>
+                                <span>#SCSS</span>
+                            </p>
+                            <p class="title">Portfolio</p>
+                            <p class="description">
+                                눈의 피로도가 적은 다크테마 컬러를 사용했습니다.
+                                기능구현은 타입스크립트를 이용했고 웹팩을 통해 타입스크립트의 모듈을 번들링 했습니다.
+                                이를통해 클라이언트 측에서 각각 모든 모듈 스크립트를 다운하는것이 아닌 번들링된 파일만 
+                                받도록하여 보다 저렴한 리소스만드로 서비스를 이용할 수 있도록 했습니다.
+                                SCSS를 통해 재활용하기 쉬운 환경에서 스타일링이 가능하도록 했습니다. 
+                            </p>
+                            <p class="emptyArea"></p>
+                            <a href="https://dogguyman.github.io/NeonText_CSS_2/css_tuto_GlowingTubelight/" target="_blank">
+                                프로젝트 보러 가기 >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="content">
+                            <p class="sharpTag">
+                                <span>#HTML</span>
+                                <span>#CSS</span>
+                            </p>
+                            <p class="title">Neon Text</p>
+                            <p class="description">
+                                <span>CSS의 이해를 높이기 위해 진행한 프로젝트로,</span>
+                                <br>
+                                <span>입력한 텍스트가 네온사인 처럼 깜빡이는 텍스트를 구현했습니다.</span>
+                            </p>
+                            <p class="emptyArea"></p>
+                            <a href="https://dogguyman.github.io/NeonText_CSS_2/css_tuto_GlowingTubelight/" target="_blank">
+                                프로젝트 보러 가기 >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="content">
+                            <p class="sharpTag">
+                                <span>#Javascript</span>
+                                <span>#HTML</span>
+                                <span>#CSS</span>
+                            </p>
+                            <p class="title">Login Form</p>
+                            <p class="description">
+                                로그인 폼을 CSS로 디자인하고 
+                                이메일 형식이 올바른지 아닌지를 
+                                Javascript를 통해 판단하도록 구현하고, 텍스트와 아이콘으로 판단하도록 구성했습니다.
+                            </p>
+                            <p class="emptyArea"></p>
+                            <a href="https://dogguyman.github.io/js_login_form/js_login_form/" target="_blank">
+                                프로젝트 보러 가기 >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="content">
+                            <p class="sharpTag">
+                                <span>#Javascript</span>
+                                <span>#Typescript</span>
+                                <span>#HTML</span>
+                                <span>#CSS</span>
+                            </p>
+                            <p class="title">Retro Menu</p>
+                            <p class="description">
+                                레트로 게임에서 모티브를 얻어 개발했습니다. 메뉴를 클릭하면 클릭한 메뉴가 활성화되고, 화면 클릭시 레트로 게임음악이 재생되며 타이틀이 음직이도록 구현했습니다.
+                            </p>
+                            <p class="emptyArea"></p>
+                            <a href="https://github.com/DogGuyMan/Animated_Active_Menu" target="_blank">
+                                프로젝트 보러 가기 >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="content">
+                            <p class="sharpTag">
+                                <span>#Javascript</span>
+                                <span>#canvas_api</span>
+                                <span>#HTML</span>
+                                <span>#CSS</span>
+                            </p>
+                            <p class="title">Moving Square</p>
+                            <p class="description">
+                                자바스크립트의 이해를 높이기 위해 키보드와 상호작용하는 브러쉬를 웹페이지에 구현했습니다.
+                            </p>
+                            <p class="emptyArea"></p>
+                            <a href="https://github.com/DogGuyMan/JS_Moving_Square" target="_blank">
+                                프로젝트 보러 가기 >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="content">
+                            <p class="sharpTag">
+                                <span>#HTML</span>
+                                <span>#CSS</span>
+                            </p>
+                            <p class="title">Glowing Icon</p>
+                            <p class="description">
+                                아이콘에 마우스를 올려 놓으면 아이콘이 상호작용하는 프로젝트 입니다.
+                            </p>
+                            <p class="emptyArea"></p>
+                            <a href="https://dogguyman.github.io/Glowing_Social_Media_Icon/" target="_blank">
+                                프로젝트 보러 가기 >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="content">
+                            <p class="sharpTag">
+                                <span>#Javascript</span>
+                                <span>#HTML</span>
+                                <span>#CSS</span>
+                                <span>#Geolocation API</span>
+                                <span>#Weather API</span>
+                            </p>
+                            <p class="title">Momentum</p>
+                            <p class="description">
+                                모멘텀 프로젝트입니다. 디지털 시계와 로그인 기능, 그리고 TodoList 기능을 넣었습니다. Geolocation API와 Weather API를 사용해 현재 위치의 날씨를 표시하도록 했습니다.
+                            </p>
+                            <p class="emptyArea"></p>
+                            <a href="https://github.com/DogGuyMan/JS_NOMAD_ChromeExtend" target="_blank">
+                                프로젝트 보러 가기 >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="content">
+                            <p class="sharpTag">
+                                <span>#Javascript</span>
+                                <span>#Typescript</span>
+                                <span>#HTML</span>
+                                <span>#CSS</span>
+                            </p>
+                            <p class="title">Video Slider</p>
+                            <p class="description">
+                                이미지가 첨부된 버튼을 만들어 버튼을 클릭하면 그에 맞는 비디오가 브라우저 배경에서 재생되는 프로젝트 입니다.
+                            </p>
+                            <p class="emptyArea"></p>
+                            <a href="https://github.com/DogGuyMan/Video_Slider" target="_blank">
+                                프로젝트 보러 가기 >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="content">
+                            <p class="sharpTag">
+                                <span>#Python</span>
+                                <span>#BS4</span>
+                                <span>#Pandas</span>
+                                <span>#Selenium</span>
+                            </p>
+                            <p class="title">집과 회사 거리계산</p>
+                            <p class="description">
+                                무수히 많은 회사 데이터를 전수조사 할때 인간의 힘으로 해내기 힘들다 판단해 카카오 지도 서비스와 Python을 이용해 거리 데이터를 추출하는 프로젝트입니다.
+                            </p>
+                            <p class="emptyArea"></p>
+                            <a href="https://github.com/DogGuyMan/Calculate_Home_Workplace_Distance" target="_blank">
+                                프로젝트 보러 가기 >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="content">
+                            <p class="sharpTag">
+                                <span>#R</span>
+                                <span>#Python</span>                            
+                                <span>#BS4</span>
+                                <span>#Pandas</span>
+                                <span>#Selenium</span> 
+                                <span>#Riot API</span>
+                            </p>
+                            <p class="title">LOL Player Statistics</p>
+                            <p class="description">
+                                D F 자판의 차이가 통계적으로 승률 차이가 없다는 것을 보임으로써 단축키 설정은 개인의 취향으로써 존중 받을 수 있도록 하고싶다는 생각에서 진행한 프로젝트 입니다
+                            </p>
+                            <p class="emptyArea"></p>
+                            <a href="https://github.com/DogGuyMan/crawling-opgg-with-BS4" target="_blank">
+                                프로젝트 보러 가기 >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="content">
+                            <p class="sharpTag">
+                                <span>#C</span>
+                                <span>#Java</span>
+                                <span>#SIC/XE</span>
+                            </p>
+                            <p class="title">SIC 머신 아키텍쳐</p>
+                            <p class="description">
+                                컴퓨터 구조를 기반으로
+                                SIC/XE머신에서 작동하는 어셈블리 언어를 이용해 
+                                기계어의 구조, 어셈블러, 로더, 매크로처리기 등의 구조와 
+                                동작 원리를 이해하고 이를 바탕으로 작동가능한 프로그램을 만들었던 과제입니다.
+                            </p>
+                            <p class="emptyArea"></p>
+                            <a href="https://drive.google.com/file/d/1x9RuaF4b94W8_Ianx4agU4pkTmlm-BSO/view?usp=sharing" target="_blank">
+                                C : 보고서 보러 가기 >
+                            </a>
+                            <a href="https://drive.google.com/file/d/19_807qSta8wKOnD1rqj7JQ-OtohgZ5TJ/view?usp=sharing" target="_blank">
+                                Java : 보고서 보러 가기 >
+                            </a>
+                            <a href="https://felipuss.tistory.com/35" target="_blank">
+                                블로그 노트
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="artworks">
                 <h1>Artworks</h1>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="../img/gallary/artwork_01.avif" type="image/avif" />
+                                <img src="../img/gallary/artwork_01.jpg" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="../img/gallary/artwork_02.avif" type="image/avif" />
+                                <img src="../img/gallary/artwork_02.jpg" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="../img/gallary/artwork_03.avif" type="image/avif" />
+                                <img src="../img/gallary/artwork_03.jpg" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="../img/gallary/artwork_04.avif" type="image/avif" />
+                                <img src="../img/gallary/artwork_04.jpg" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="../img/gallary/artwork_05.avif" type="image/avif" />
+                                <img src="../img/gallary/artwork_05.jpg" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="../img/gallary/artwork_06.avif" type="image/avif" />
+                                <img src="../img/gallary/artwork_06.jpg" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="../img/gallary/artwork_07.avif" type="image/avif" />
+                                <img src="../img/gallary/artwork_07.jpg" />
+                            </picture>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+    
+                    <!-- If we need scrollbar -->
+                </div>
+            </section>
+            <section class="blog">
+                <h1>Blog</h1>
+                <p class="contentText">
+                    <span>
+                        프로 개발자가 되기까지 디딤돌이 되는 글을 포스팅하는 <strong>기술블로그</strong> 입니다.
+                        백준 문제해결 알고리즘, 자료구조, 유니티 등등 <strong>공부한 내용</strong>을 포스팅하고
+                    <strong>취미</strong>로 그렸던 그림과 작곡했던 음악을 소소하게 게시하기도 합니다.
+                    </span>
+                </p>
+                <div class="blog_grid">
+                    <div class="post">
+                        <picture>
+                            <source srcset="../../img/BlogImg.avif" type="image/avif" />
+                            <img src="../../img/BlogImg.jpg"/>
+                        </picture>
+                        <div class="content">
+                            <p class="title">자료구조 카테고리</p>
+                            <p class="description">자료구조를 공부하면서 작성한 노트를 정리해서 포스팅 했고, 자료구조를 객체지향 프로그래밍에 입각해 구현한 코드를 게시하였습니다.</p>
+                            <p class="emptyArea"></p>
+                            <a href="https://felipuss.tistory.com/category/%EC%BB%B4%ED%93%A8%ED%84%B0/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0" target="_blank">
+                                카테고리로 이동 하기 >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <picture>
+                            <source srcset="../../img/BlogImg.avif" type="image/avif" />
+                            <img src="../../img/BlogImg.jpg"/>
+                        </picture>
+                        <div class="content">
+                            <p class="title">웹공부 카테고리</p>
+                            <p class="description">웹 공부를 하면서 작성했던 노드, 메모를 정리해서 포스팅 했고, 개념이나 문법이 떠오르지 않을때마다 다시 봐도 이해하기 쉽도록 개념과 예제로 구성했습니다.</p>
+                            <p class="emptyArea"></p>
+                            <a href="https://felipuss.tistory.com/category/%EC%BB%B4%ED%93%A8%ED%84%B0/Javascript" target="_blank">
+                                카테고리로 이동 하기 >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <picture>
+                            <source srcset="../../img/BlogImg.avif" type="image/avif" />
+                            <img src="../../img/BlogImg.jpg"/>
+                        </picture>
+                        <div class="content">
+                            <p class="title">알고리즘 카테고리</p>
+                            <p class="description">
+                                백준을 풀면서 작성했던 알고리즘 코드, 문제 해결 아이디어의 흐름, 오답노트를 정리해 포스팅 했습니다.
+                            </p>
+                            <p class="emptyArea"></p>
+                            <a href="https://felipuss.tistory.com/category/%EC%BB%B4%ED%93%A8%ED%84%B0/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" target="_blank">
+                                카테고리로 이동 하기 >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <picture>
+                            <source srcset="../../img/BlogImg.avif" type="image/avif" />
+                            <img src="../../img/BlogImg.jpg"/>
+                        </picture>
+                        <div class="content">
+                            <p class="title">게임개발 카테고리</p>
+                            <p class="description">게임제작 프로젝트에서 독학했던 Unity 사용법에 대한 노트입니다</p>
+                            <p class="emptyArea"></p>
+                            <a href="https://felipuss.tistory.com/category/%EA%B2%8C%EC%9E%84/%EA%B0%9C%EB%B0%9C" target="_blank">
+                                카테고리로 이동 하기 >
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="contact">
                 <h1>Contact</h1>
             </section>
         </section>
-        <section class="footer hidden">
+        <section class="footer">
             <div class="content">
                 <div class="phone_number">
-                    <img src="../../img/icons/phone_icon.svg"></img>
+                    <img src="../img/icons/phone_icon.svg"></img>
                     <span class="number">010-6499-2609</span>
                 </div>
                 <div class="Email">
-                    <img src="../../img/icons/email_icon.svg"></img>
+                    <img src="../img/icons/email_icon.svg"></img>
                     <span class="Email">escatrgot@gmail.com</span>
                 </div>
                 <div class="icon-link">
                     <div class="github">
                         <a href="https://github.com/DogGuyMan" target="_blank">
-                            <img src="../../img/icons/github_icon.svg" alt="">
+                            <img src="../img/icons/github_icon.svg" alt="">
                         </a>
                     </div>
                     <div class="tistory">
                         <a href="https://felipuss.tistory.com/" target="_blank">
-                            <img src="../../img/icons/tistory_icon.svg" alt="">
+                            <img src="../img/icons/tistory_icon.svg" alt="">
                         </a>
                     </div>
                 </div>
@@ -190,6 +762,47 @@
     </main>
     <script type="module" src="../../src/anime.js"></script>
     <script defer src="../../public/bundle.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper', {
+
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 2,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                sliderShadows: true,
+            },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            on: {
+                init() {
+                    this.el.addEventListener('mouseenter', () => {
+                        this.autoplay.stop();
+                    });
+
+                    this.el.addEventListener('mouseleave', () => {
+                        this.autoplay.start();
+                    });
+                }
+            },
+        });
+    </script>
 </body>
 
 </html>

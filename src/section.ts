@@ -43,7 +43,7 @@ class Section {
         this.mSectionSetElements = this.mSectionSet.querySelectorAll("section") as NodeListOf<HTMLElement>;
         this.mTempIndex = this.calCurSection();
 
-        this.mOffset = replaceToDecimal(window.getComputedStyle(this.mSectionSetElements[0]).getPropertyValue('margin'))[0];
+        this.mOffset = 10;
     }
     /*
         calCurSection

@@ -1,0 +1,200 @@
+//style.css
+@import "variables", "about", "skill", "project", "blog", "artworks";
+
+//////////////////////////////////////////////////////
+body {
+    background-color: $bgColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+main.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .SidebarSection {
+        @extend .SidebarStyle;
+    }
+
+    .ContentSection {
+        @extend .ContentSectionStyle;
+    }
+}
+
+
+.SidebarStyle {
+    position: relative;
+    width: 100vw;
+    height: 56px;
+
+    .sidebar_area {
+        background-color: $sideBgColor;
+    }
+
+    .sidebar_fixed {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: $sideBgColor;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+
+        .sideContent {
+            min-width: 1280px;
+            padding: 0 80px;
+            display: flex;
+
+            .profile {
+                display: flex;
+                align-items: center;
+                height: inherit;
+                margin: 3px;
+
+                img {
+                    @include pngIcon(24px);
+                }
+
+                .nameSet {
+                    line-height: 1.5;
+                    color: #d8d8da;
+                    padding: 0 6px;
+                }
+            }
+
+            .empty_area {
+                width: 105px;
+            }
+
+            .menu {
+                div.ActivedBox {
+                    position: fixed;
+                    width: 140px;
+                    height: 56px;
+                    z-index: -2;
+                    background-color: #3A3C47;
+                    border-bottom: 3px solid $sectionName;
+                }
+
+                ul {
+                    display: flex;
+                    align-items: center;
+
+                    li {
+                        cursor: pointer;
+                        width: 140px;
+                        height: 56px;
+
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        color: #4c4c4c;
+
+                        &.Active {
+                            color: $sectionName;
+                            transition: color 0.5s ease;
+                        }
+
+                        &:hover {
+
+                            border-bottom: 1px solid #4c4c4c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ContentSectionStyle {
+    max-width: 1280px;
+    position: relative;
+    overflow-x: hidden;
+
+    section {
+        @extend .sectionDefault;
+        font-size: 40px;
+    }
+
+    section.about {
+        @extend .aboutForm;
+    }
+
+    section.skill {
+        @extend .skillForm;
+    }
+
+    section.project {
+        @extend .projectForm;
+    }
+
+    section.artworks {
+        @extend .artworksForm;
+    }
+
+    section.blog {
+        @extend .blogForm;
+    }
+
+    section.contact {
+        @extend .sectionDefault;
+        padding-bottom: 32px;
+        font-size: 40px;
+    }
+}
+
+.footer {
+    @extend .alignCenter;
+    @extend .sectionPadding;
+    color: #d8d8da;
+    background-color: $footerBgColor;
+    width: 100vw;
+    font-size: 20px;
+    height: 292px;
+
+    .content {
+        //fontIcon transform
+
+        //content Elements alignCenter
+        &>div {
+            @extend .alignCenter;
+            gap: 4px;
+            margin: 16px;
+        }
+
+        .phone_number {}
+
+        .Email {}
+
+        .icon-link {
+            margin-top: 40px;
+            gap: 8px;
+            cursor: pointer;
+            .github {
+                @include pngIcon(56px);
+                transition: 0.5s;
+                &:hover{
+                    filter : drop-shadow(0 0  20px #fff); 
+                }
+            }
+
+            .tistory {
+                @include pngIcon(56px);
+                transition: 0.5s;
+                &:hover{
+                    filter : drop-shadow(0 0  20px #fff);
+                }
+            }
+        }
+
+        .copy_right {
+            color: #96989F;
+        }
+    }
+}

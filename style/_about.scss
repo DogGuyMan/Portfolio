@@ -1,0 +1,50 @@
+@import "variables";
+
+.AboutAnime{
+    position: absolute;
+    top: 0;
+    right: 52.5%; 
+    @extend .animationForm;
+}
+
+.aboutForm{
+    p.headerText {
+        width: 469px;
+        height: 202px;
+        @extend .headerTextForm;
+    }
+
+    p.contentText {
+        width: 573px;
+        height: 352px;
+        @extend .contentTextForm;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.6;
+        color: #d4d5d7;
+        gap: 26px;
+        min-width: 650px;
+        max-width: 1650px;
+
+        div {
+            p {
+                margin: 16px 0;
+            }
+
+            img {
+                width: 100%;
+                min-width: 300px;
+                border-radius: 16px;
+                height: 249px;
+            }
+
+            //미디어 쿼리 적용할것
+        }
+    }
+}
