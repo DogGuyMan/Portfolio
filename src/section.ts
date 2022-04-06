@@ -71,7 +71,7 @@ class Section {
         this.mSectionSetElements.forEach( _E=>{
             console.log(_E.getBoundingClientRect().bottom);
         })*/
-        console.log(replaceToDecimal(window.getComputedStyle(this.mSectionSetElements[0]).getPropertyValue('margin'))[0]);
+        //console.log(replaceToDecimal(window.getComputedStyle(this.mSectionSetElements[0]).getPropertyValue('margin'))[0]);
     }
     /*
         calCurSection

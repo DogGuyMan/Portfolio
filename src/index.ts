@@ -14,7 +14,6 @@ function main(){
     sideBarInit();
     window.addEventListener('scroll', ()=>{
         sideBarInstance.ScrollMenuActive(sectionClass.GetCurIndex());
-        console.log(sectionClass.GetCurIndex());
     })
 
 }
