@@ -6,13 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style type="text/css">
-        *,
-        *::after,
-        *::before {
+        main,
+        main::after,
+        main::before {
             -webkit-user-select: none;
-            -webkit-user-drag: none;
             -webkit-app-region: no-drag;
             cursor: default;
+        }
+        .footer > *,
+        .footer > *::after,
+        .footer > *::before{
+            -webkit-user-select: text !important;
+            -webkit-app-region: drag !important;
+        }
+        .footer,
+        .footer::after,
+        .footer::before {
+            -webkit-user-select: text !important;
+            -webkit-app-region: drag !important;
         }
     </style>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
@@ -94,7 +105,7 @@
                         <ul class="menu_list">
                             <li id="about">About</li>
                             <li id="skill">Skill Set</li>
-                            <li id="project">Project</li>
+                            <li id="project">Projects</li>
                             <li id="artworks">Artworks</li>
                             <li id="blog">Blog</li>
                             <li id="contact">Contact</li>
@@ -111,26 +122,24 @@
                 </p>
                 <p class="contentText">
                     <span>
-                        <strong>
-                            안녕하세요 보충역 산업기능요원을 지원하게된 홍상준 입니다.
-                            숭실대학교 컴퓨터학부</strong>에서 <strong>프론트엔드</strong> 및 <strong>게임 개발</strong>을 주로 공부중입니다.
-                            다양한 문제를 해결할 때 느끼는 즐거움은 저의 원동력입니다.
-                            꾸준하게 깊이있는 학습을 통해 기술력을 다지고, 이를 통해 문제를 해결해 나가고자 합니다.
-                        <br>
-                    </span>
+                    <strong>안녕하세요 보충역 산업기능 요원을 지원하게 된 홍상준 입니다.
+                    숭실대학교 컴퓨터학부</strong>에서 <strong>프론트엔드</strong> 및 <strong>게임 개발</strong>을 주로 공부 중입니다.
+                    다양한 문제를 해결할 때 느끼는 즐거움은 저의 원동력입니다.
+                    꾸준하게 깊이 있는 학습을 통해 기술력을 다지고, 이를 통해 문제를 해결해 나가고자 합니다.
                     <br>
-                    <span>
-                        저는 평소 C/C++/Python으로 백준을 풀면서 <strong>알고리즘 공부</strong>를 했습니다.
-                        Riot API를 이용해 유저의 게임데이터를 가져오고 R studio을 이용해
-                        유저의 플레이 동향에 대한 <strong>통계적 가설을 세우고 분석</strong>하는 프로젝트를 진행했습니다.
-                        안면인식, 시선 추적 오픈소스를 이용한 웹기반 <strong>온라인 테스트 부정행위 모니터링</strong> 프로그램을 만들었고,
-                        이 프로젝트는 KCI 논문으로 등재되었습니다.
-                        GIGDC 공모전에 제출할 게임을 <strong>Unity</strong>로 개발중입니다.
-                    </span>
+                </span>
+                    <br>
+
+                    저는 평소 C/C++/Python으로 백준을 풀면서 <strong>알고리즘 공부</strong>를 했습니다.
+                    Riot API를 이용해 유저의 게임데이터를 가져오고 R studio를 이용해
+                    유저의 플레이 동향에 대한 <strong>통계적 가설을 세우고 분석</strong>하는 프로젝트를 진행했습니다.
+                    안면인식, 시선 추적 오픈소스를 이용한 웹 기반 <strong>온라인 테스트 부정행위 모니터링</strong> 프로그램을 만들었고,
+                    이 프로젝트는 KCI 논문으로 등재되었습니다.
+                    GIGDC 공모전에 제출할 게임을 <strong>Unity</strong>로 개발 중입니다.
                 </p>
                 <div class="stats">
                     <div class="githubStats">
-                        <p>Github stats</p>
+                        <p>GitHub Stats</p>
                         <img src="https://github-readme-stats.vercel.app/api?username=DogGuyMan&amp;show_icons=true"
                             alt="Anurag&apos;s GitHub stats">
                     </div>
@@ -148,7 +157,7 @@
                 </div>
             </section>
             <section class="skill">
-                <h1>Skill</h1>
+                <h1>Skill Set</h1>
                 <div class="skill_content">
                     <div id="Tech">
                         <p>1. Tech Tools</p>
@@ -314,25 +323,25 @@
                                     <div class="png_icon">
                                         <img src="../img/icons/Property=clipstudio.png" alt="">
                                     </div>
-                                    <p>Github</p>
+                                    <p>ClipStudio</p>
                                 </div>
                                 <div class="tool_box">
                                     <div class="png_icon">
                                         <img src="../img/icons/photoshop.png" alt="">
                                     </div>
-                                    <p>Sourcetree</p>
+                                    <p>Photoshop</p>
                                 </div>
                                 <div class="tool_box">
                                     <div class="png_icon">
                                         <img src="../img/icons/Property=procreate.png" alt="">
                                     </div>
-                                    <p>Slack</p>
+                                    <p>Procreate</p>
                                 </div>
                                 <div class="tool_box">
                                     <div class="png_icon">
                                         <img src="../img/icons/Property=figma.png" alt="">
                                     </div>
-                                    <p>Zeplin</p>
+                                    <p>Figma</p>
                                 </div>
                             </div>
                         </div>
@@ -340,12 +349,12 @@
                 </div>
             </section>
             <section class="project">
-                <h1>Project</h1>
+                <h1>Projects</h1>
                 <p class="contentText">
                     <span>
-                        깃허브 Repository를 만들면서, <strong>개인 프로젝트</strong> 뿐만 아니라, <strong>협업 프로젝트</strong>
-                        그리고 <strong>개발 공부</strong>를 하면서 배웠던 자료구조와 자료구조를 구현한 코드, 알고리즘 노트를 마크다운으로 작성하였습니다.
-                        <strong>노트는 보는 사람도, 추후에 읽을 자신을 생각<strong>하면서 작성했습니다.
+                        깃허브 Repository를 만들면서, <strong> 개인 프로젝트</strong> 뿐만 아니라, <strong> 협업 프로젝트 </strong>
+                            그리고 </strong> 개발 공부를 하면서 배웠던 자료구조와 자료구조를 구현한 코드, 알고리즘 노트를 마크다운으로 작성하였습니다.
+                            <strong> 노트는 보는 사람도, 다음에 읽을 자신을 생각하면서 작성했습니다.
                     </span>
                 </p>
                 <div class="projects_grid">
@@ -357,8 +366,8 @@
                             </p>
                             <p class="title">Gear-Heart</p>
                             <p class="description">
-                                지인을 모아 GIGDC 인디게임 공모전에 제출할 게임을 개발하고 있습니다. 모노톤 그래픽과 디스토피아 테마를 가진 2D 플랫포머 / Run and Action
-                                장르의 슈팅게임입니다
+                                지인을 모아 GIGDC 인디게임 공모전에 제출할 게임을 개발하고 있습니다. 장르는 슈퍼마리오와 같은 2D 플랫포머게임이고, 메탈슬러그와 같은 Run and Gun
+                                장르의 슈팅 게임입니다. 모노톤 그래픽을 채용하여 디스토피아 세계관을 강조하였습니다.
                             </p>
                             <p class="emptyArea"></p>
                             <a href="https://github.com/DogGuyMan/Owner_neoskyclad_Gear_Heart_Assets" target="_blank">
@@ -374,8 +383,8 @@
                             </p>
                             <p class="title">안면인식을 통한 부정행위 감지</p>
                             <p class="description">
-                                안면인식, 시선 추적 오픈소스를 이용한 웹기반 온라인 테스트 부정행위 감시 프로그램을 만들었습니다. 해당 프로젝트 설계과정과 연구 내용은 KCI 논문으로
-                                등재되었습니다.
+                                안면인식, 시선 추적 오픈 소스를 이용하여, 웹 기반 온라인 테스트 부정행위 감시 프로그램을 만들었습니다. 이 프로젝트의 설계과정과 연구 내용을 정리하여
+                                논문을 작성하였고 해당 논문은 KCI 논문에 등재되었습니다.
                             </p>
                             <p class="emptyArea"></p>
                             <a href="https://github.com/realsuperman/openSource" target="_blank">
@@ -399,10 +408,11 @@
                             <p class="title">Portfolio</p>
                             <p class="description">
                                 눈의 피로도가 적은 다크테마 컬러를 사용했습니다.
-                                기능구현은 타입스크립트를 이용했고 웹팩을 통해 타입스크립트의 모듈을 번들링 했습니다.
-                                이를통해 클라이언트 측에서 각각 모든 모듈 스크립트를 다운하는것이 아닌 번들링된 파일만
-                                받도록하여 보다 저렴한 리소스만드로 서비스를 이용할 수 있도록 했습니다.
-                                SCSS를 통해 재활용하기 쉬운 환경에서 스타일링이 가능하도록 했습니다.
+                                자바스크립트의 느슨한 타입선언을 보완하고, 클래스 기반 개발이 쉬운 타입스크립트를 이용해 기능구현을 했습니다.
+                                그리고 웹팩을 통해 구현했던 타입스크립트의 모듈을 번들링 했습니다.
+                                Swiper.js를 통해 이미지 갤러리를 만들었고, Anime.js를 이용해 SVG 벡터 이미지 애니메이션을 만들었습니다.
+                                그리고 스타일링에서 기존 CSS3는 유지보수가 좀 어렵고 작성한 것들이 알아보기 힘들었습니다. 그래서 SCSS를 이용했습니다.
+                                덕분에 코드를 재활용할 수 있었고 효율적인 스타일링이 가능했습니다.
                             </p>
                             <p class="emptyArea"></p>
                             <a href="https://dogguyman.github.io/NeonText_CSS_2/css_tuto_GlowingTubelight/"
@@ -419,9 +429,8 @@
                             </p>
                             <p class="title">Neon Text</p>
                             <p class="description">
-                                <span>CSS의 이해를 높이기 위해 진행한 프로젝트로,</span>
-                                <br>
-                                <span>입력한 텍스트가 네온사인 처럼 깜빡이는 텍스트를 구현했습니다.</span>
+                                CSS의 이해를 높이기 위해 진행한 프로젝트로,
+                                입력한 텍스트가 네온사인 처럼 깜빡이는 텍스트를 구현했습니다.
                             </p>
                             <p class="emptyArea"></p>
                             <a href="https://dogguyman.github.io/NeonText_CSS_2/css_tuto_GlowingTubelight/"
@@ -439,9 +448,8 @@
                             </p>
                             <p class="title">Login Form</p>
                             <p class="description">
-                                로그인 폼을 CSS로 디자인하고
-                                이메일 형식이 올바른지 아닌지를
-                                Javascript를 통해 판단하도록 구현하고, 텍스트와 아이콘으로 판단하도록 구성했습니다.
+                                로그인 폼을 CSS로 디자인하고 작성한 이메일 인풋에 따라 색, 아이콘이 표시되도록 했습니다.
+                                이메일 형식을 판단하는 로직은 Javascript로 구현했습니다.
                             </p>
                             <p class="emptyArea"></p>
                             <a href="https://dogguyman.github.io/js_login_form/js_login_form/" target="_blank">
@@ -459,7 +467,8 @@
                             </p>
                             <p class="title">Retro Menu</p>
                             <p class="description">
-                                레트로 게임에서 모티브를 얻어 개발했습니다. 메뉴를 클릭하면 클릭한 메뉴가 활성화되고, 화면 클릭시 레트로 게임음악이 재생되며 타이틀이 음직이도록
+                                레트로 게임에서 모티브를 얻어 개발했습니다. 
+                                메뉴를 클릭하면 클릭한 메뉴가 활성화되고, 화면 클릭 시 레트로 게임 음악이 재생되며 타이틀이 움직이도록
                                 구현했습니다.
                             </p>
                             <p class="emptyArea"></p>
@@ -478,7 +487,8 @@
                             </p>
                             <p class="title">Moving Square</p>
                             <p class="description">
-                                자바스크립트의 이해를 높이기 위해 키보드와 상호작용하는 브러쉬를 웹페이지에 구현했습니다.
+                                자바스크립트의 이해를 높이기 위해 키보드와 상호작용하는 브러시를 웹페이지에 구현했습니다.
+                                애니메이션, 시각화된 데이터, 카메라 등등 그래픽을 그리기 위해 사용되는 canvas_API를 이용했습니다.
                             </p>
                             <p class="emptyArea"></p>
                             <a href="https://github.com/DogGuyMan/JS_Moving_Square" target="_blank">
@@ -494,7 +504,9 @@
                             </p>
                             <p class="title">Glowing Icon</p>
                             <p class="description">
-                                아이콘에 마우스를 올려 놓으면 아이콘이 상호작용하는 프로젝트 입니다.
+                                아이콘에 마우스를 올려놓으면 아이콘이 상호작용하는 프로젝트입니다.
+                                아이콘은 Fontawesome 사용하여 이미지 표시에 비용이 적게 사용되도록 했습니다.
+                                그리고 각 SNS 아이콘에 알맞은 키 컬러를 사용했습니다.
                             </p>
                             <p class="emptyArea"></p>
                             <a href="https://dogguyman.github.io/Glowing_Social_Media_Icon/" target="_blank">
@@ -513,8 +525,8 @@
                             </p>
                             <p class="title">Momentum</p>
                             <p class="description">
-                                모멘텀 프로젝트입니다. 디지털 시계와 로그인 기능, 그리고 TodoList 기능을 넣었습니다. Geolocation API와 Weather API를 사용해
-                                현재 위치의 날씨를 표시하도록 했습니다.
+                                디지털 시계와 로그인 기능, 그리고 LocalStorage를 이용한 TodoList 기능을 넣었습니다. 
+                                Geolocation API와 Weather API를 사용해 현재 위치의 날씨를 표시하도록 했습니다.
                             </p>
                             <p class="emptyArea"></p>
                             <a href="https://github.com/DogGuyMan/JS_NOMAD_ChromeExtend" target="_blank">
@@ -550,7 +562,8 @@
                             </p>
                             <p class="title">집과 회사 거리계산</p>
                             <p class="description">
-                                무수히 많은 회사 데이터를 전수조사 할때 인간의 힘으로 해내기 힘들다 판단해 카카오 지도 서비스와 Python을 이용해 거리 데이터를 추출하는 프로젝트입니다.
+                                무수히 많은 회사 데이터를 전수조사 할때 인간의 힘으로 해내기 힘들다 판단해 
+                                카카오 지도 서비스와 Python을 이용해 거리 데이터를 추출하는 프로젝트입니다.
                             </p>
                             <p class="emptyArea"></p>
                             <a href="https://github.com/DogGuyMan/Calculate_Home_Workplace_Distance" target="_blank">
@@ -672,9 +685,9 @@
                 <h1>Blog</h1>
                 <p class="contentText">
                     <span>
-                        프로 개발자가 되기까지 디딤돌이 되는 글을 포스팅하는 <strong>기술블로그</strong> 입니다.
+                        프로 개발자가 되기까지 디딤돌이 되는 글을 포스팅하는 <strong>기술 블로그</strong> 입니다.
                         백준 문제해결 알고리즘, 자료구조, 유니티 등등 <strong>공부한 내용</strong>을 포스팅하고
-                        <strong>취미</strong>로 그렸던 그림과 작곡했던 음악을 소소하게 게시하기도 합니다.
+                        <strong>취미</strong> 로 그렸던 그림과 작곡했던 음악을 소소하게 개시하기도 합니다.
                     </span>
                 </p>
                 <div class="blog_grid">
