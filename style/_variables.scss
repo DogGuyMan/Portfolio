@@ -12,6 +12,22 @@ $ellipsePositionY : -154px;
 $ellipsePositionX : 45.5vw;
 $ActiveTextPositionY : 144px;
 $ActiveTextPositionX : 55vw;
+$mobile: 767px;
+$tablet: 1023px;
+$desktop: 1024px;
+
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: calc($mobile+1px)) and (max-width: $tablet) {
+        @content;
+    }
+}
+
 
 * {
     margin: 0;
@@ -79,74 +95,98 @@ li {
     margin-bottom: 72px;
 }
 
-.reveal{
+.reveal {
     transform: translateY(50px);
     opacity: 0;
     transition: 2s all ease;
 }
-.reveal.active{
+
+.reveal.active {
     transform: translateY(0);
     opacity: 1;
 }
 
-.animationForm{
-    .activeText{
+.animationForm {
+    .activeText {
         position: absolute;
         z-index: -800;
-        svg{
+
+        svg {
             position: absolute;
             transform: scale(100%);
-            &:nth-child(1){
-                top : 150px;
+
+            &:nth-child(1) {
+                top: 150px;
                 left: 80px;
             }
-            &:nth-child(2){
-                top : 300px;
+
+            &:nth-child(2) {
+                top: 300px;
                 left: 185px;
             }
         }
-        svg:first-child >  path{
-            transform: 
-                rotate(-16.52deg)
-                translate(-30px,0);
+
+        svg:first-child>path {
+            transform:
+                rotate(-16.52deg) translate(-30px, 0);
         }
-        svg:last-child >  path{
-            transform: 
-                rotate(-16.52deg)
-                translate(0px,10px);
+
+        svg:last-child>path {
+            transform:
+                rotate(-16.52deg) translate(0px, 10px);
         }
     }
-    
-    .EllipseList{
+
+    .EllipseList {
         position: absolute;
         z-index: -999;
-        top: 100px; left: 100px;
-        svg{
+        top: 100px;
+        left: 100px;
+
+        svg {
             width: 800px;
             height: 800px;
             position: absolute;
-            &:nth-child(4){}
-            &:nth-child(3){
-                left : 7; top: -20px;
+
+            &:nth-child(4) {}
+
+            &:nth-child(3) {
+                left: 7;
+                top: -20px;
             }
-            &:nth-child(2){
-                
-                left : 14; top: -40px;
+
+            &:nth-child(2) {
+
+                left: 14;
+                top: -40px;
             }
-            &:nth-child(1){
-                left : 21; top: -60px;
+
+            &:nth-child(1) {
+                left: 21;
+                top: -60px;
             }
         }
-        svg > path {
-            transform: 
-                rotate(10.45deg)
-                scale(80%)
-                translate(100px, -30px);
+
+        svg>path {
+            transform:
+                rotate(10.45deg) scale(80%) translate(100px, -30px);
         }
-        svg:nth-child(1) > path{opacity: 1;}
-        svg:nth-child(2) > path{opacity: 0.8;}
-        svg:nth-child(3) > path{opacity: 0.6;}
-        svg:nth-child(4) > path{opacity: 0.4;}
+
+        svg:nth-child(1)>path {
+            opacity: 1;
+        }
+
+        svg:nth-child(2)>path {
+            opacity: 0.8;
+        }
+
+        svg:nth-child(3)>path {
+            opacity: 0.6;
+        }
+
+        svg:nth-child(4)>path {
+            opacity: 0.4;
+        }
     }
 }
 
@@ -161,15 +201,16 @@ li {
     }
 }
 
-html::-webkit-scrollbar{
+html::-webkit-scrollbar {
     width: 16px;
 }
-html::-webkit-scrollbar-track{
+
+html::-webkit-scrollbar-track {
     background-color: #2f3542;
     border-radius: 10px;
 }
 
-html::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb {
     background-color: #94959b;
     border-radius: 10px;
 }
