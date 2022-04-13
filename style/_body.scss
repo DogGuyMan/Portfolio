@@ -49,6 +49,9 @@ main.main {
 
         .sideContent {
             min-width: 1280px;
+            @include tablet {
+                min-width: 100vw;
+            }
             padding: 0 80px;
             display: flex;
 
@@ -103,7 +106,6 @@ main.main {
                         }
 
                         &:hover {
-
                             border-bottom: 1px solid #4c4c4c;
                         }
                     }

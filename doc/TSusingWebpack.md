@@ -1,5 +1,7 @@
 [웹팩 이해하기](https://tecoble.techcourse.co.kr/post/2021-07-10-webpack-exercise/)
 
+#### [전체 README.md로 돌아가기](../../../포트폴리오/README.md)
+
 #### TS를 번들링하기 위해 웹펙 설치 명령어
 ```shell
 npm install webpack webpack-cli ts-loader -D
