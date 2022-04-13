@@ -1,11 +1,16 @@
 # swiper.js
 
+https://velog.io/@hustle-dev/%EC%9B%B9-%EC%84%B1%EB%8A%A5%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B5%9C%EC%A0%81%ED%99%94
+
 #### [전체 README.md로 돌아가기](../../../포트폴리오/README.md)
 
 ### 개요
 <img src="https://media.giphy.com/media/MXjuiYv3Gco8EgvDse/giphy-downsized-large.gif" width="400px">
 
 * 여태 취미로 그렸던 사진을 슬라이딩 가능한 갤러리로 구현
+* 이미지 최적화를 위해 상단 링크에서 영감을 받아 **avif 파일**로 이미지를 삽입해 일반 jpg에 비해 약 **90% 정도의 용량 최적화**를 이루어 배포된 웹 사이트에서 **리소스 부하를 줄이는데 성공**함 
+
+
 
 ### 스크립트
 ```js
