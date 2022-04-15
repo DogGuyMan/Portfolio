@@ -49,9 +49,6 @@ main.main {
 
         .sideContent {
             min-width: 1280px;
-            @include tablet {
-                min-width: 100vw;
-            }
             padding: 0 80px;
             display: flex;
 
