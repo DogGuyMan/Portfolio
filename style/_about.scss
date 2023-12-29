@@ -33,7 +33,7 @@
                 margin: 16px 0;
             }
 
-            img {
+            img:not(.certificate_logo) {
                 width: 100%;
                 min-width: 300px;
                 border-radius: 16px;

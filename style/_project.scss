@@ -63,27 +63,29 @@
             @extend .ElementForm;
             //width: 582px; height: 388px;
         }
-        .project:nth-child(1){background-image: url('https://drive.google.com/uc?export=download&id=1dJkmfFJHbAWXrXPpcQCO71nn6Dem7QZB'); background-position: center;}
-        .project:nth-child(2){
+        .project:nth-child(1){background-image: url('https://media.giphy.com/media/AeXORnm7TZEv9znVQo/giphy.gif'); background-position: center;}
+        .project:nth-child(2){background-image: url('https://media.giphy.com/media/ZxTNODwlKyH338sGpi/giphy-downsized.gif'); background-position: center;}
+        .project:nth-child(3){background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG52ZHRzN2F2NG51MWRqdHJqYmNudDRxdTVpdm5wenNqdHQ0bnhlcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IcrC2tUioWnV3TUqtR/source.gif'); background-position: center;}
+        .project:nth-child(4){
             background-image: url('https://drive.google.com/uc?export=download&id=1av_K8pv57GBIQGknv4eY1KUNTWX5TMM5');
             background-position: center;
         }
-        .project:nth-child(3){
+        .project:nth-child(5){
             background-image: url('https://drive.google.com/uc?export=download&id=1aH2d0iOGsWkyRyTbLTh8F2mw6oFPeF8M'); background-position: center;
             grid-column: 1 / -1;
             .description{
                 width: 700px;
             }
         }
-        .project:nth-child(4){background-image: url('https://media.giphy.com/media/WHr4xmAJ4ya6nmgYYV/giphy-downsized.gif'); background-position: center;}
-        .project:nth-child(5){background-image: url('https://media.giphy.com/media/MTiWjDLYPuzXZ5cuw0/giphy.gif'); background-position: center;}
-        .project:nth-child(6){background-image: url('https://media.giphy.com/media/8haAUrGd2SPMXfTzDf/giphy.gif'); background-position: center;}
-        .project:nth-child(7){background-image: url('https://media.giphy.com/media/aDuRNGP0FfhuiK7uE9/giphy.gif'); background-position: center;}
-        .project:nth-child(8){background-image: url('https://media.giphy.com/media/ryjR4Ae2hwKqRqa83f/giphy.gif'); background-position: center;}
-        .project:nth-child(9){background-image: url('https://drive.google.com/uc?export=download&id=11OgVftp5jPbUtPN5haWa3yXSd_M11HH7'); background-position: center;}
-        .project:nth-child(10){background-image: url('https://media.giphy.com/media/T9ZoakofQIIEUTkksI/giphy-downsized.gif'); background-position: center;}
-        .project:nth-child(11){background-image: url('https://drive.google.com/uc?export=download&id=1Bh7gTP8fljf6fLvHl0TZjUmOTxeQ-MwQ'); background-position: center;}
-        .project:nth-child(12){background-image: url('https://drive.google.com/uc?export=download&id=18xoVUECsgmABGuMkJiFvewsNl3C2IQ1U'); background-position: center;}
-        .project:nth-child(13){background-image: url('https://drive.google.com/uc?export=download&id=1fTnSBefxxVJN5DzDj3nLT1Ei_WEQSqDB'); background-position: center;}
+        .project:nth-child(6){background-image: url('https://media.giphy.com/media/WHr4xmAJ4ya6nmgYYV/giphy-downsized.gif'); background-position: center;}
+        .project:nth-child(7){background-image: url('https://media.giphy.com/media/MTiWjDLYPuzXZ5cuw0/giphy.gif'); background-position: center;}
+        .project:nth-child(8){background-image: url('https://media.giphy.com/media/8haAUrGd2SPMXfTzDf/giphy.gif'); background-position: center;}
+        .project:nth-child(9){background-image: url('https://media.giphy.com/media/aDuRNGP0FfhuiK7uE9/giphy.gif'); background-position: center;}
+        .project:nth-child(10){background-image: url('https://media.giphy.com/media/ryjR4Ae2hwKqRqa83f/giphy.gif'); background-position: center;}
+        .project:nth-child(11){background-image: url('https://drive.google.com/uc?export=download&id=11OgVftp5jPbUtPN5haWa3yXSd_M11HH7'); background-position: center;}
+        .project:nth-child(12){background-image: url('https://media.giphy.com/media/T9ZoakofQIIEUTkksI/giphy-downsized.gif'); background-position: center;}
+        .project:nth-child(13){background-image: url('https://drive.google.com/uc?export=download&id=1Bh7gTP8fljf6fLvHl0TZjUmOTxeQ-MwQ'); background-position: center;}
+        .project:nth-child(14){background-image: url('https://drive.google.com/uc?export=download&id=18xoVUECsgmABGuMkJiFvewsNl3C2IQ1U'); background-position: center;}
+        .project:nth-child(15){background-image: url('https://drive.google.com/uc?export=download&id=1fTnSBefxxVJN5DzDj3nLT1Ei_WEQSqDB'); background-position: center;}
     }
 }

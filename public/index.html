@@ -25,6 +25,127 @@
             -webkit-user-select: text !important;
             -webkit-app-region: drag !important;
         }
+        .Certificate {
+            font-family: -apple-system, BlinkMacSystemFont, helvetica, "Apple SD Gothic Neo", sans-serif;
+            overflow-x: hidden;
+            height: 100%;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            -webkit-text-size-adjust: none;
+        }
+
+        .Certificate .certificate_main_card .certificate_card {
+            position: relative;
+            width: 226px;
+            border-radius: 22px;
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, .08);
+            border: 1px solid #d7dee6;
+            background: #fff;
+            white-space: normal;
+            text-align: left;
+        }
+
+        .certificate_card_bg_type_hrdk {
+            background: linear-gradient(109deg, #276ff9 50%, #5992ff 99%);
+        }
+
+        .Certificate .certificate_main_card .certificate_card_top {
+            box-sizing: border-box;
+            position: relative;
+            height: 193px;
+            margin: -1px -1px 0;
+            padding: 38px 22px 18px;
+            border-radius: 22px 22px 0 0;
+        }
+
+        .Certificate .certificate_main_card .certificate_card_top::before {
+            background-position: -86px -104px;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 19px;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            content: '';
+            background-image: url(https://ssl.pstatic.net/static/nid/smartwallet/m_sp_01_Certificate_823d9fe1.png);
+            background-size: 176px 173px;
+            background-repeat: no-repeat;
+        }
+
+        .Certificate .certificate_main_card .certificate_item_type {
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -.5px;
+            color: #fff;
+        }
+
+        .Certificate .certificate_main_card .certificate_item_name {
+            display: -webkit-box;
+            overflow: hidden;
+            height: 84px;
+            margin-top: 3px;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 27px;
+            letter-spacing: -.5px;
+            color: #fff;
+            text-overflow: ellipsis;
+            word-break: keep-all;
+            word-wrap: break-word;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        .Certificate .certificate_main_card .certificate_item_place {
+            margin-top: 10px;
+            opacity: .55;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: -.5px;
+            color: #fff;
+        }
+
+        .Certificate .certificate_main_card .certificate_card_bottom {
+            position: relative;
+            box-sizing: border-box;
+            height: 103px;
+            margin: 0 -1px;
+            padding: 16px 72px 18px 22px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .Certificate .certificate_main_card .certificate_line {
+            padding-top: 2px;
+            white-space: nowrap;
+        }
+
+        .Certificate .certificate_main_card .certificate_line .certificate_title {
+            float: left;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: -.5px;
+            color: #888;
+        }
+
+        .Certificate .certificate_main_card .certificate_line .certificate_desc {
+            overflow: hidden;
+            padding-left: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: -.5px;
+            color: #424242;
+            text-overflow: ellipsis;
+        }
+
+        .Certificate .certificate_main_card .certificate_logo {
+            position: absolute;
+            top: 20px;
+            right: 0;
+        }
     </style>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
@@ -123,20 +244,23 @@
                 </p>
                 <p class="contentText">
                     <span>
-                    <strong>안녕하세요 숭실대학교 컴퓨터학부</strong>에서 
-                    <strong>프론트엔드</strong> 및 <strong>게임 개발</strong>을 주로 공부중인 홍상준 입니다.
-                    다양한 문제를 해결할 때 느끼는 즐거움은 저의 원동력입니다.
-                    꾸준하게 깊이 있는 학습을 통해 기술력을 다지고, 이를 통해 문제를 해결해 나가고자 합니다.
+                    <strong>안녕하세요 숭실대학교 컴퓨터학부</strong>에서
+                    <strong>게임 개발</strong>과 <strong>웹 프론트 엔드</strong>공부를 해왔고,
+                    현재는 <strong>클라이언트 개발자를 꿈꾸는</strong> <strong>홍상준</strong> 입니다. <br>
+                    배웠던 것을 활용하고, 만들었던것이 작동하는 모습을 볼때 뿌듯함을 느끼며,
+                    새로운 지식을 배우며 성장하고 다양한 문제를 해결할때 성취감을 즐거움을 느낄줄 아는 개발자 입니다.                
                     <br>
                 </span>
                     <br>
-
-                    저는 평소 C/C++/Python으로 백준을 풀면서 <strong>알고리즘 공부</strong>를 했습니다.
-                    Riot API를 이용해 유저의 게임데이터를 가져오고 R studio를 이용해
+                    대학 연합 동아리인 ProjectLamB의 창립 멤버로, <strong>개발자, 테크 디렉터</strong> 로 활동하고 있습니다.
+                    <strong>Unity</strong>로 게임개발을 했었고 만들었던 <strong>게임을 런칭하고 판매했던 경험</strong>이 있고, <br>
+                    다양한 공모전 활동의 경험이 있습니다.
+                    그리고, 숭실대 게임 개발 동아리인 겜마루에 소속되어 쉐이더를 통한 이펙트 제작 특강을 진행하기도 했습니다.
+                    또한 평소 C/C++/Python으로 백준을 풀면서 <strong>알고리즘 공부</strong>를 했습니다.
+                    게임 외적인 프로젝트로 Riot API를 이용해 유저의 게임데이터를 가져오고 R studio를 이용해
                     유저의 플레이 동향에 대한 <strong>통계적 가설을 세우고 분석</strong>하는 프로젝트를 진행했습니다.
                     안면인식, 시선 추적 오픈소스를 이용한 웹 기반 <strong>온라인 테스트 부정행위 모니터링</strong> 프로그램을 만들었고,
                     이 프로젝트는 KCI 논문으로 등재되었습니다.
-                    GIGDC 공모전에 제출할 게임을 <strong>Unity</strong>로 개발 중입니다.
                 </p>
                 <div class="stats">
                     <div class="githubStats">
@@ -149,11 +273,44 @@
                         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DogGuyMan&amp;hide=ShaderLab,Html ,HLSL&amp;layout=compact&langs_count=10"
                             alt="Top Langs">
                     </div>
-                    <div class="solvedAC End">
+                    <div class="solvedAC">
                         <p>Solved AC</p>
                         <a href="https://solved.ac/felipuss"><img
                                 src="http://mazassumnida.wtf/api/generate_badge?boj=felipuss"
                                 alt="Solved.ac&#xD504;&#xB85C;&#xD544;"></a>
+                    </div>
+                    <div class="End">
+                    </div>
+                    <div class="certificateToken End">
+                        <p>Certificate</p>
+                        <div class="Certificate">
+                            <div>
+                                <div class="certificate_main_card">
+                                    <div class="certificate_card">
+                                        <div class="certificate_card_top certificate_card_bg_type_hrdk">
+                                            <div class="certificate_item_type">국가기술자격증</div>
+                                            <strong class="certificate_item_name">정보처리기사</strong>
+                                            <div class="certificate_item_place">한국산업인력공단</div>
+                                        </div>
+                                        <div class="certificate_card_bottom">
+                                            <div class="certificate_line">
+                                                <div class="certificate_title">이름</div>
+                                                <div class="certificate_desc">홍상준</div>
+                                            </div>
+                                            <div class="certificate_line">
+                                                <div class="certificate_title">직무</div>
+                                                <div class="certificate_desc">정보기술</div>
+                                            </div>
+                                            <div class="certificate_line">
+                                                <div class="certificate_title">합격</div>
+                                                <div class="certificate_desc">2023.11.15</div>
+                                            </div>
+                                            <img class="certificate_logo" src="./CertificateFiles/logo-hrdk-80x60.png" alt="" width="80" height="60">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -206,34 +363,11 @@
                                     </div>
                                     <p>C#</p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="DataScience" id="listBox">
-                            <p>데이터 분석</p>
-                            <div class="ToolList">
                                 <div class="tool_box">
                                     <div class="png_icon">
-                                        <img src="../img/icons/Property=r.png" alt="">
+                                        <img src="../img/icons/Property=FMOD.png" alt="">
                                     </div>
-                                    <p>Rstudio</p>
-                                </div>
-                                <div class="tool_box">
-                                    <div class="png_icon">
-                                        <img src="../img/icons/Property=pandas.png" alt="">
-                                    </div>
-                                    <p>Pandas</p>
-                                </div>
-                                <div class="tool_box">
-                                    <div class="png_icon">
-                                        <img src="../img/icons/Property=beautifulsoup.png" alt="">
-                                    </div>
-                                    <p>Beautifulsoup</p>
-                                </div>
-                                <div class="tool_box">
-                                    <div class="png_icon">
-                                        <img src="../img/icons/Property=selsnium.png" alt="">
-                                    </div>
-                                    <p>Selsnium</p>
+                                    <p>FMOD</p>
                                 </div>
                             </div>
                         </div>
@@ -309,6 +443,24 @@
                                 </div>
                                 <div class="tool_box">
                                     <div class="png_icon">
+                                        <img src="../img/icons/Property=Discord.png" alt="">
+                                    </div>
+                                    <p>Discord</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=Notion.png" alt="">
+                                    </div>
+                                    <p>Notion</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=DrawIO.png" alt="">
+                                    </div>
+                                    <p>DrawIO</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
                                         <img src="../img/icons/Property=slack.png" alt="">
                                     </div>
                                     <p>Slack</p>
@@ -346,6 +498,18 @@
                                 </div>
                                 <div class="tool_box">
                                     <div class="png_icon">
+                                        <img src="../img/icons/Property=Adobe_After_Effects.png" alt="">
+                                    </div>
+                                    <p>AfterEffect</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
+                                        <img src="../img/icons/Property=Blender.png" alt="">
+                                    </div>
+                                    <p>Blender</p>
+                                </div>
+                                <div class="tool_box">
+                                    <div class="png_icon">
                                         <img src="../img/icons/Property=figma.png" alt="">
                                     </div>
                                     <p>Figma</p>
@@ -370,14 +534,62 @@
                             <p class="sharpTag">
                                 <span>#Unity</span>
                                 <span>#C#</span>
+                                <span>#Stove Store SDK</span>
                             </p>
                             <p class="title">Gear-Heart</p>
                             <p class="description">
-                                지인을 모아 GIGDC 인디게임 공모전에 제출할 게임을 개발하고 있습니다. 장르는 슈퍼마리오와 같은 2D 플랫포머게임이고, 메탈슬러그와 같은 Run and Gun
-                                장르의 슈팅 게임입니다. 모노톤 그래픽을 채용하여 디스토피아 세계관을 강조하였습니다.
+                                2D 플랫포머 슈팅 장르의 게임입니다. 모노톤 그래픽을 채용하여 디스토피아 세계관을 강조하였습니다. <strong>BIC(부산 인디 커넥트)</strong>에 참가하여 부스 운영을 한 경험이 있습니다.
+                                실제 스토브 인디와 <strong>Project LamB</strong> 라는 팀 명으로 계약을 맺어 <strong>Stove Store SDK를 사용해여 현재 스토브 스토어에서 게임을 입점</strong>하게 되었습니다. 
                             </p>
                             <p class="emptyArea"></p>
-                            <a href="https://github.com/DogGuyMan/Owner_neoskyclad_Gear_Heart_Assets" target="_blank">
+                            <a href="https://store.onstove.com/de/games/2775" target="_blank">
+                                Stove store >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="content">
+                            <p class="sharpTag">
+                                <span>#Unity</span>
+                                <span>#C#</span>
+                                <span>#Google Play</span>
+                            </p>
+                            <p class="title">뭉뭉이와 총총총</p>
+                            <p class="description">
+                                이븐아이 게임톤 5기에 참가하여 개발한 <strong>뭉뭉이와 총총총</strong>이란 게임입니다.
+                                모바일 캐주얼 러닝게임을 유니티로 제작하였습니다.
+                                기획, 프로젝트 매니저, 사업 각각의 파트를 맡은 팀원과 함께 협업을 진행했고, 실제 
+                                구글 플레이 스토어에 런칭한 경험을 했습니다.
+                            </p>
+                            <p class="emptyArea"></p>
+                            <a href="https://play.google.com/store/apps/details?id=com.Team1.MungRun" target="_blank">
+                                Google Play >
+                            </a>
+                            <a href="https://docs.google.com/presentation/d/1h9He70HS9eN60fchvVPsgxzWoS_rs9-g/edit?usp=sharing&ouid=103392747532550617451&rtpof=true&sd=true"
+                                target="_blank">
+                                PPT 첨부 >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="content">
+                            <p class="sharpTag">
+                                <span>#Unity URP</span>
+                                <span>#C#</span>
+                                <span>#ShaderGraph</span>
+                                <span>#FMOD</span>
+                            </p>
+                            <p class="title">Sophia</p>
+                            <p class="description">
+                                Project LamB에서 현재 개발중인 GearHeart의 후속작 Sophia 입니다.
+                                사이버 펑크 컨셉 3D 탑뷰 로그라이크 장르의 게임입니다. 
+                                유니티 URP 파이프라인 환경에서 맵과 애니메이팅을 제외한 전반적인 게임 아키텍쳐를 설계했습니다.
+                            </p>
+                            <p class="emptyArea"></p>
+                            <a href="https://youtu.be/Vm4VPQ4QS04?si=xFwYbWwjDxU8WSTT" target="_blank">
+                                데모 플레이 영상 >
+                            </a>
+                            <a href="https://github.com/ProjectLamb/ProjectLamb_Sophia" target="_blank">
                                 프로젝트 보러 가기 >
                             </a>
                         </div>
@@ -681,6 +893,18 @@
                                 <img src="../img/gallary/artwork_07.jpg" />
                             </picture>
                         </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="../img/gallary/artwork_09.avif" type="image/avif" />
+                                <img src="../img/gallary/artwork_09.jpg" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="../img/gallary/artwork_10.avif" type="image/avif" />
+                                <img src="../img/gallary/artwork_10.jpg" />
+                            </picture>
+                        </div>
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
@@ -783,8 +1007,9 @@
                     <span class="Email">escatrgot@gmail.com</span>
                 </div>
                 <div class="icon-link">
-                    <div class="github" <a href="https://github.com/DogGuyMan" target="_blank">
-                        <img src="../img/icons/github_icon.svg" alt="">
+                    <div class="github">
+                        <a href="https://github.com/DogGuyMan" target="_blank">
+                            <img src="../img/icons/github_icon.svg" alt="">
                         </a>
                     </div>
                     <div class="tistory">
